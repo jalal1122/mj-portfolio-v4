@@ -60,6 +60,7 @@ export function Navigation() {
         <button
           className="hidden md:flex items-center gap-2 px-3 py-1.5 ml-2 text-xs text-muted-foreground bg-secondary/50 rounded-md border border-[oklch(1_0_0/0.08)] hover:bg-secondary hover:text-foreground transition-all duration-200"
           onClick={() => alert("Command menu coming soon!")}
+          aria-label="Open command menu"
         >
           <span className="font-mono">⌘K</span>
         </button>

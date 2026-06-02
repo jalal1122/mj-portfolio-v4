@@ -16,6 +16,7 @@ export default function ContactRightPane() {
   const [focusedField, setFocusedField] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -29,27 +30,49 @@ export default function ContactRightPane() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitError(null);
 
-    // Simulate submission delay
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
-    // Here you would typically send the data to a server
-    console.log("Form submitted:", formData);
-
-    setSubmitted(true);
-    setIsSubmitting(false);
-
-    // Reset after 3 seconds
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        name: "",
-        company: "",
-        projectType: site.contact.projectTypes[0],
-        email: "",
-        message: "",
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
-    }, 3000);
+
+      const payload = (await response.json().catch(() => null)) as {
+        message?: string;
+        error?: string;
+      } | null;
+
+      if (!response.ok) {
+        throw new Error(
+          payload?.error || "Unable to send your message right now.",
+        );
+      }
+
+      setSubmitted(true);
+
+      window.setTimeout(() => {
+        setSubmitted(false);
+        setFormData({
+          name: "",
+          company: "",
+          projectType: site.contact.projectTypes[0],
+          email: "",
+          message: "",
+        });
+      }, 3000);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : "Unable to send your message right now.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -73,7 +96,7 @@ export default function ContactRightPane() {
                 onFocus={() => setFocusedField("name")}
                 onBlur={() => setFocusedField(null)}
                 placeholder={site.contact.placeholderName}
-                className={`bg-transparent border-0 border-b-2 px-2 py-1 focus:outline-none transition-all duration-300 min-w-[200px] ${
+                className={`bg-transparent border-0 border-b-2 px-2 py-1 focus:outline-none transition-all duration-300 min-w-50 ${
                   focusedField === "name"
                     ? "border-cyan-400 text-white"
                     : "border-white/20 text-white/80"
@@ -89,7 +112,7 @@ export default function ContactRightPane() {
                 onFocus={() => setFocusedField("company")}
                 onBlur={() => setFocusedField(null)}
                 placeholder={site.contact.placeholderCompany}
-                className={`bg-transparent border-0 border-b-2 px-2 py-1 focus:outline-none transition-all duration-300 min-w-[180px] ${
+                className={`bg-transparent border-0 border-b-2 px-2 py-1 focus:outline-none transition-all duration-300 min-w-45 ${
                   focusedField === "company"
                     ? "border-cyan-400 text-white"
                     : "border-white/20 text-white/80"
@@ -108,7 +131,7 @@ export default function ContactRightPane() {
                 onChange={handleChange}
                 onFocus={() => setFocusedField("projectType")}
                 onBlur={() => setFocusedField(null)}
-                className={`bg-transparent border-0 border-b-2 px-2 py-1 focus:outline-none transition-all duration-300 min-w-[220px] appearance-none cursor-pointer ${
+                className={`bg-transparent border-0 border-b-2 px-2 py-1 focus:outline-none transition-all duration-300 min-w-55 appearance-none cursor-pointer ${
                   focusedField === "projectType"
                     ? "border-cyan-400 text-white"
                     : "border-white/20 text-white/80"
@@ -140,7 +163,7 @@ export default function ContactRightPane() {
                 onBlur={() => setFocusedField(null)}
                 placeholder={site.contact.placeholderEmail}
                 required
-                className={`bg-transparent border-0 border-b-2 px-2 py-1 focus:outline-none transition-all duration-300 min-w-[220px] ${
+                className={`bg-transparent border-0 border-b-2 px-2 py-1 focus:outline-none transition-all duration-300 min-w-55 ${
                   focusedField === "email"
                     ? "border-cyan-400 text-white"
                     : "border-white/20 text-white/80"
@@ -215,6 +238,16 @@ export default function ContactRightPane() {
               className="text-center font-mono text-sm text-cyan-400/80"
             >
               {site.contact.successMessage}
+            </motion.p>
+          )}
+
+          {submitError && (
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-center font-mono text-sm text-red-400/90"
+            >
+              {submitError}
             </motion.p>
           )}
         </form>

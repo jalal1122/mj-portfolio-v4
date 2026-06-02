@@ -6,13 +6,18 @@ import { LanguageDNA } from "@/components/metrics-language-dna";
 import { CapabilityMatrix } from "@/components/metrics-capability-matrix";
 import Link from "next/link";
 import { site } from "@/lib/site-content";
+import { getGitHubMetrics } from "@/lib/github";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: site.metrics.metadataTitle,
   description: site.metrics.metadataDescription,
 };
 
-export default function MetricsPage() {
+export default async function MetricsPage() {
+  const githubMetrics = await getGitHubMetrics();
+
   return (
     <main className="min-h-screen bg-background">
       {/* Navigation breadcrumb */}
@@ -37,7 +42,7 @@ export default function MetricsPage() {
 
           {/* Dashboard grid */}
           <div className="space-y-8">
-            <MacroReadouts />
+            <MacroReadouts githubMetrics={githubMetrics} />
             <KineticHeatmap />
             <LanguageDNA />
             <CapabilityMatrix />

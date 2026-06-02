@@ -1,15 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-
-const clients = [
-  { name: "TechCorp", logo: "TC" },
-  { name: "DataFlow", logo: "DF" },
-  { name: "CloudBase", logo: "CB" },
-  { name: "NextGen", logo: "NG" },
-  { name: "ByteLabs", logo: "BL" },
-  { name: "CodeWave", logo: "CW" },
-]
+import { clients } from "@/lib/site-content"
 
 export function TrustSection() {
   return (

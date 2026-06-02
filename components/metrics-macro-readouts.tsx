@@ -1,34 +1,54 @@
-'use client'
+"use client";
 
-import { useMemo } from 'react'
+import { useMemo } from "react";
+import type { GitHubMetrics } from "@/lib/github";
 
 interface MacroReadoutsProps {
-  totalCommits?: number
-  openSourceRepos?: number
-  totalStars?: number
+  githubMetrics?: GitHubMetrics;
+  totalCommits?: number;
+  openSourceRepos?: number;
+  totalStars?: number;
 }
 
 export function MacroReadouts({
+  githubMetrics,
   totalCommits = 2847,
   openSourceRepos = 12,
   totalStars = 348,
 }: MacroReadoutsProps) {
+  const resolvedTotalCommits = githubMetrics?.totalCommits ?? totalCommits;
+  const resolvedOpenSourceRepos =
+    githubMetrics?.openSourceRepos ?? openSourceRepos;
+  const resolvedTotalStars = githubMetrics?.totalStars ?? totalStars;
+
   // Generate simple sparkline data
   const generateSparkline = () => {
-    const points = Array.from({ length: 20 }, () => Math.random() * 100)
-    const max = Math.max(...points)
-    return points.map(p => (p / max) * 100)
-  }
+    const points = Array.from({ length: 20 }, () => Math.random() * 100);
+    const max = Math.max(...points);
+    return points.map((p) => (p / max) * 100);
+  };
 
-  const commitSparkline = useMemo(() => generateSparkline(), [])
-  const repoSparkline = useMemo(() => generateSparkline(), [])
-  const starSparkline = useMemo(() => generateSparkline(), [])
+  const commitSparkline = useMemo(() => generateSparkline(), []);
+  const repoSparkline = useMemo(() => generateSparkline(), []);
+  const starSparkline = useMemo(() => generateSparkline(), []);
 
   const metrics = [
-    { label: 'TOTAL COMMITS', value: totalCommits, sparkline: commitSparkline },
-    { label: 'OPEN SOURCE REPOS', value: openSourceRepos, sparkline: repoSparkline },
-    { label: 'GITHUB STARS', value: totalStars, sparkline: starSparkline },
-  ]
+    {
+      label: "TOTAL COMMITS",
+      value: resolvedTotalCommits,
+      sparkline: commitSparkline,
+    },
+    {
+      label: "OPEN SOURCE REPOS",
+      value: resolvedOpenSourceRepos,
+      sparkline: repoSparkline,
+    },
+    {
+      label: "GITHUB STARS",
+      value: resolvedTotalStars,
+      sparkline: starSparkline,
+    },
+  ];
 
   return (
     <div className="border border-white/10 p-8 mb-8 bg-black/40">
@@ -59,5 +79,5 @@ export function MacroReadouts({
         ))}
       </div>
     </div>
-  )
+  );
 }

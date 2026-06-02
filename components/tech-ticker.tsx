@@ -1,21 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-
-const techItems = [
-  { name: "Next.js", type: "filled" },
-  { name: "React", type: "outline" },
-  { name: "TypeScript", type: "filled" },
-  { name: "Node.js", type: "outline" },
-  { name: "MongoDB", type: "filled" },
-  { name: "PostgreSQL", type: "outline" },
-  { name: "Tailwind CSS", type: "filled" },
-  { name: "GraphQL", type: "outline" },
-  { name: "Docker", type: "filled" },
-  { name: "AWS", type: "outline" },
-  { name: "Prisma", type: "filled" },
-  { name: "Redis", type: "outline" },
-]
+import {techItems} from "@/lib/site-content"
 
 function TechItem({ name, type }: { name: string; type: string }) {
   if (type === "outline") {

@@ -9,6 +9,9 @@ export const about = content.about;
 export const stack = content.stack;
 export const projects = content.projects;
 export const caseStudies = content.caseStudies;
+export const clients = content.clients;
+
+export const techItems = content.techItems;
 
 export function getProjectBySlug(slug: string) {
   return caseStudies.projects.find((project) => project.slug === slug);

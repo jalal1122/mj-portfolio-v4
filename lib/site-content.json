@@ -135,7 +135,11 @@
       ],
       "projectTypes": [
         "a MERN application",
+        "a Next.js application",
         "an AI Integration",
+        "a Mobile App",
+        "a Web Automation Tool",
+        "a Data Visualization Dashboard",
         "a Full-Stack Platform",
         "a Custom Solution"
       ],
@@ -149,7 +153,7 @@
       "submitLabel": "TRANSMIT SECURE PAYLOAD //",
       "submittingLabel": "TRANSMITTING...",
       "submittedLabel": "✓ PAYLOAD TRANSMITTED",
-      "successMessage": "Message received. I'll get back to you soon.",
+      "successMessage": "Roger That!. I'll get back to you soon.",
       "audioLabel": "GAMING SOUNDTRACKS",
       "systemReady": "[SYSTEM READY // AWAITING TRANSMISSION]"
     },
@@ -501,5 +505,28 @@
         }
       }
     ]
-  }
+  },
+  "techItems": [
+    { "name": "Next.js", "type": "filled" },
+    { "name": "React", "type": "outline" },
+    { "name": "TypeScript", "type": "filled" },
+    { "name": "Node.js", "type": "outline" },
+    { "name": "MongoDB", "type": "filled" },
+    { "name": "PostgreSQL", "type": "outline" },
+    { "name": "Tailwind CSS", "type": "filled" },
+    { "name": "React Native", "type": "outline" },
+    { "name": "Docker", "type": "filled" },
+    { "name": "AWS", "type": "outline" },
+    { "name": "Prisma", "type": "filled" },
+    { "name": "Redis", "type": "outline" }
+  ],
+  "clients": [
+    { "name": "Tech4Edges", "logo": "T4E" },
+    { "name": "NexttEvent", "logo": "NXTE" },
+    { "name": "EmergingEdges", "logo": "EE" },
+    { "name": "Anora", "logo": "AR" },
+    { "name": "Anovax", "logo": "AX" },
+    { "name": "Sylani", "logo": "SMIT" },
+    { "name": "DevMates", "logo": "DM" }
+  ]
 }

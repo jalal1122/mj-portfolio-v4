@@ -3,8 +3,13 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { site, stack } from "@/lib/site-content";
+import type { GitHubMetrics } from "@/lib/github";
 
 const techStack = stack;
+
+interface BentoGridProps {
+  githubMetrics?: GitHubMetrics;
+}
 
 function PhilosophyCard() {
   return (
@@ -34,23 +39,12 @@ function PhilosophyCard() {
   );
 }
 
-function GitHubCard() {
-  const [commits] = useState([
-    { day: 0, count: 3 },
-    { day: 1, count: 5 },
-    { day: 2, count: 2 },
-    { day: 3, count: 8 },
-    { day: 4, count: 4 },
-    { day: 5, count: 6 },
-    { day: 6, count: 1 },
-    { day: 7, count: 7 },
-    { day: 8, count: 3 },
-    { day: 9, count: 9 },
-    { day: 10, count: 4 },
-    { day: 11, count: 2 },
-    { day: 12, count: 6 },
-    { day: 13, count: 5 },
-  ]);
+function GitHubCard({ metrics }: { metrics: GitHubMetrics }) {
+  const weeklyContributions =
+    metrics.weeklyContributions.length > 0
+      ? metrics.weeklyContributions
+      : [3, 5, 2, 8, 4, 6, 1, 7, 3, 9, 4, 2, 6, 5];
+  const maxWeeklyContribution = Math.max(...weeklyContributions, 1);
 
   return (
     <motion.div
@@ -63,31 +57,32 @@ function GitHubCard() {
       <div className="flex items-start justify-between mb-6">
         <div>
           <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-            GitHub Impact
+            GitHub Impact{" "}
+            {metrics.source === "live" ? "// LIVE" : "// FALLBACK"}
           </span>
           <p className="text-3xl md:text-4xl font-bold mt-2">
-            {site.githubImpact.contributions}
+            {Number(metrics.contributions) != 0 ? metrics.contributions : site.githubImpact.contributions}
           </p>
           <p className="text-sm text-muted-foreground">
-            {site.githubImpact.contributionLabel}
+            {metrics.contributionLabel}
           </p>
         </div>
         <div className="text-right">
-          <p className="text-lg font-semibold">
-            {site.githubImpact.repositories}
-          </p>
+          <p className="text-lg font-semibold">{metrics.repositories}</p>
           <p className="text-xs text-muted-foreground">
-            {site.githubImpact.repositoriesLabel}
+            {metrics.repositoriesLabel}
           </p>
         </div>
       </div>
 
       <div className="flex items-end gap-1 h-20">
-        {commits.map((commit, i) => (
+        {weeklyContributions.map((count, i) => (
           <motion.div
             key={i}
             initial={{ height: 0 }}
-            whileInView={{ height: `${(commit.count / 10) * 100}%` }}
+            whileInView={{
+              height: `${(count / maxWeeklyContribution) * 100}%`,
+            }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: i * 0.05 }}
             className="flex-1 rounded-sm bg-accent/20 hover:bg-accent/40 transition-colors"
@@ -252,7 +247,7 @@ function CurrentFocusCard() {
   );
 }
 
-export function BentoGrid() {
+export function BentoGrid({ githubMetrics }: BentoGridProps) {
   return (
     <section id="about" className="py-20 md:py-32 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
@@ -271,7 +266,21 @@ export function BentoGrid() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <PhilosophyCard />
           <StackCard />
-          <GitHubCard />
+          <GitHubCard
+            metrics={
+              githubMetrics ?? {
+                contributions: site.githubImpact.contributions,
+                contributionLabel: site.githubImpact.contributionLabel,
+                repositories: site.githubImpact.repositories,
+                repositoriesLabel: site.githubImpact.repositoriesLabel,
+                totalCommits: 2847,
+                openSourceRepos: 12,
+                totalStars: 348,
+                weeklyContributions: [3, 5, 2, 8, 4, 6, 1, 7, 3, 9, 4, 2, 6, 5],
+                source: "fallback",
+              }
+            }
+          />
           <TerminalCard />
           <CurrentFocusCard />
         </div>
