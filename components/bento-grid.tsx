@@ -42,8 +42,8 @@ function PhilosophyCard() {
 function GitHubCard({ metrics }: { metrics: GitHubMetrics }) {
   const weeklyContributions =
     metrics.weeklyContributions.length > 0
-      ? metrics.weeklyContributions
-      : [3, 5, 2, 8, 4, 6, 1, 7, 3, 9, 4, 2, 6, 5];
+      ? [3, 5, 2, 8, 4, 6, 1, 7, 3, 9, 4, 2, 6, 5]
+      : metrics.weeklyContributions;
   const maxWeeklyContribution = Math.max(...weeklyContributions, 1);
 
   return (
@@ -61,7 +61,9 @@ function GitHubCard({ metrics }: { metrics: GitHubMetrics }) {
             {metrics.source === "live" ? "// LIVE" : "// FALLBACK"}
           </span>
           <p className="text-3xl md:text-4xl font-bold mt-2">
-            {Number(metrics.contributions) != 0 ? metrics.contributions : site.githubImpact.contributions}
+            {Number(metrics.contributions) != 0
+              ? metrics.contributions
+              : site.githubImpact.contributions}
           </p>
           <p className="text-sm text-muted-foreground">
             {metrics.contributionLabel}
