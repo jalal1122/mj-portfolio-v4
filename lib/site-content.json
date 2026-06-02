@@ -1,0 +1,480 @@
+{
+  "site": {
+    "name": "Muhammad Jalal",
+    "initials": "MJ",
+    "title": "Muhammad Jalal — Full-Stack Developer",
+    "description": "Engineering high-performance digital realities. Full-Stack MERN & Next.js Developer crafting exceptional web experiences.",
+    "headerBadge": "[ LIVE TELEMETRY // GITHUB API CONNECTED ]",
+    "headerTitle": "ENGINEERING\nOUTPUT.",
+    "headerSubtitle": "Real-time metrics from GitHub, curated for engineering precision.",
+    "location": "Peshawar, Pakistan",
+    "timezone": "Asia/Karachi",
+    "availability": "Available for new ventures",
+    "currentRole": "Full-Stack MERN & Next.js Developer",
+    "heroHeadline": ["Engineering", "high-performance", "digital realities."],
+    "heroSubtext": "Crafting scalable web applications and immersive digital experiences with modern technologies. Turning complex problems into elegant solutions.",
+    "heroPrimaryCta": "View Projects",
+    "heroSecondaryCta": "Get in Touch",
+    "heroBadge": "Available for new ventures",
+    "heroStatus": {
+      "location": "Peshawar, PK",
+      "temperature": "28°C"
+    },
+    "aboutIntro": "Full-Stack MERN & Next.js Developer. Currently pursuing BSIT at Agriculture University Peshawar. Passionate about integrating AI into web platforms to create intelligent, human-centric digital experiences. I believe in building not just code, but systems that solve real problems.",
+    "aboutVibeTitle": "SYSTEM AUDIO // VIBE CHECK",
+    "aboutVibeText": "Currently vibing to gaming soundtracks and lo-fi beats. Building with focus, shipping with pride.",
+    "aboutHeadline": "ENGINEERING\nDIGITAL\nREALITIES",
+    "philosophy": {
+      "title": "Code should be poetry in motion.",
+      "description": "I believe in writing clean, maintainable code that stands the test of time. Every line serves a purpose, every function tells a story."
+    },
+    "githubImpact": {
+      "contributions": "1,247+",
+      "contributionLabel": "contributions this year",
+      "repositories": "42",
+      "repositoriesLabel": "repositories"
+    },
+    "aboutFooter": {
+      "eyebrow": "CONTINUOUS DEPLOYMENT",
+      "heading": "The Mantra",
+      "marquee": "ALWAYS BUILDING ✦ ALWAYS LEARNING ✦ ALWAYS SHIPPING ✦ ALWAYS BUILDING ✦ ALWAYS LEARNING ✦ ALWAYS SHIPPING ✦",
+      "ctaCopy": "Driven by curiosity. Fueled by passion. Committed to excellence."
+    },
+    "terminal": {
+      "whoami": "Muhammad Jalal — Full-Stack Developer",
+      "skills": [
+        "Full-Stack Development",
+        "System Architecture",
+        "UI/UX Engineering"
+      ],
+      "commands": {
+        "help": "Commands: help, skills, contact, clear",
+        "skills": "React, Next.js, Node.js, TypeScript, MongoDB...",
+        "contact": "jk4350649@gmail.com | github.com/ahmadraza"
+      }
+    },
+    "currentFocus": {
+      "title": "Building AI-powered SaaS products",
+      "status": "In development"
+    },
+    "projectsSection": {
+      "eyebrow": "Portfolio",
+      "title": "Selected Works",
+      "viewAllLabel": "View All Projects"
+    },
+    "projectsArchive": [
+      {
+        "id": 1,
+        "title": "ATTENDX SYSTEM",
+        "year": 2024,
+        "role": "FULL-STACK ARCHITECT",
+        "stack": ["REACT", "NODE.JS", "POSTGRESQL"],
+        "description": "Attendance management platform with real-time analytics",
+        "id": 2,
+        "title": "KITE INDUSTRIAL PLATFORM",
+        "year": 2024,
+        "headerBadge": "[ LIVE TELEMETRY // GITHUB API CONNECTED ]",
+        "headerTitle": "ENGINEERING\nOUTPUT.",
+        "headerSubtitle": "Real-time metrics from GitHub, curated for engineering precision.",
+        "role": "LEAD ENGINEER",
+        "stack": ["NEXT.JS", "TYPESCRIPT", "TAILWIND"],
+        "description": "B2B industrial supply chain management system",
+        "image": "https://images.unsplash.com/photo-1551434678-e076306042cf?w=800&h=600&fit=crop"
+      },
+      {
+        "id": 3,
+        "title": "ANORA COMMERCE",
+        "systemReady": "[SYSTEM READY // AWAITING TRANSMISSION]",
+        "contributions": "1,247+",
+        "title": "NEURAL INSIGHTS",
+        "year": 2023,
+        "role": "ML ENGINEER",
+        "stack": ["PYTHON", "TENSORFLOW", "REACT"],
+        "aboutFooter": {
+          "eyebrow": "CONTINUOUS DEPLOYMENT",
+          "heading": "The Mantra",
+          "marquee": "ALWAYS BUILDING ✦ ALWAYS LEARNING ✦ ALWAYS SHIPPING ✦ ALWAYS BUILDING ✦ ALWAYS LEARNING ✦ ALWAYS SHIPPING ✦",
+          "ctaCopy": "Driven by curiosity. Fueled by passion. Committed to excellence."
+        },
+        "description": "Machine learning analytics dashboard for data science teams",
+        "image": "https://images.unsplash.com/photo-1555949519-cf1d4b9f9c6c?w=800&h=600&fit=crop"
+      },
+      {
+        "id": 5,
+        "title": "VORTEX API GATEWAY",
+        "year": 2023,
+        "role": "BACKEND ENGINEER",
+        "stack": ["GO", "KUBERNETES", "GRPC"],
+        "description": "Scalable API gateway with advanced routing capabilities",
+        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop"
+      },
+      {
+        "id": 6,
+        "title": "CIPHER SECURITY",
+        "year": 2022,
+        "role": "SECURITY LEAD",
+        "stack": ["RUST", "CRYPTOGRAPHY", "AUDIT"],
+        "description": "Enterprise-grade encryption and security suite",
+        "image": "https://images.unsplash.com/photo-1563986768060-7305c1e02d82?w=800&h=600&fit=crop"
+      }
+    ],
+    "metrics": {
+      "metadataTitle": "Engineering Output — Metrics Dashboard",
+      "metadataDescription": "Live telemetry and engineering metrics. Real-time GitHub analytics and capability assessment.",
+      "refreshedCopy": "Data refreshed every 24 hours",
+      "sourceCopy": "Metrics sourced from GitHub API and custom analytics pipeline."
+    },
+    "contact": {
+      "headline": ["LET'S", "BUILD", "SOMETHING", "EXCEPTIONAL."],
+      "intro": [
+        "Hello Muhammad. My name is",
+        "and I am reaching out from",
+        "We are looking for a developer to help us with",
+        "You can reach me directly at",
+        "Here's what we'd like to share:"
+      ],
+      "projectTypes": [
+        "a MERN application",
+        "an AI Integration",
+        "a Full-Stack Platform",
+        "a Custom Solution"
+      ],
+      "email": "jk4350649@gmail.com",
+      "emailLabel": "DIRECT",
+      "emailHint": "@gmail.com",
+      "placeholderName": "Your Name",
+      "placeholderCompany": "Your Company",
+      "placeholderEmail": "your@email.com",
+      "placeholderMessage": "Tell me more about your project...",
+      "submitLabel": "TRANSMIT SECURE PAYLOAD //",
+      "submittingLabel": "TRANSMITTING...",
+      "submittedLabel": "✓ PAYLOAD TRANSMITTED",
+      "successMessage": "Message received. I'll get back to you soon.",
+      "audioLabel": "GAMING SOUNDTRACKS",
+      "systemReady": "[SYSTEM READY // AWAITING TRANSMISSION]"
+    },
+    "footer": {
+      "cta": "Ready to collaborate?",
+      "titleLineOne": "LET'S",
+      "titleLineTwo": "BUILD.",
+      "buttonLabel": "Start a Project",
+      "brandDescription": "Full-Stack Developer crafting exceptional digital experiences from Pakistan.",
+      "bottomLeft": "© {year} Muhammad Jalal. All rights reserved.",
+      "bottomRight": "Designed & Built with ♥ in Pakistan",
+      "navigation": [
+        { "name": "MJ", "href": "/" },
+        { "name": "About", "href": "/about" },
+        { "name": "Projects", "href": "/projects" },
+        { "name": "Metrics", "href": "/metrics" },
+        { "name": "Contact", "href": "/contact" }
+      ],
+      "socials": [
+        {
+          "name": "GitHub",
+          "href": "https://github.com/jalal1122",
+          "icon": "GH"
+        },
+        {
+          "name": "LinkedIn",
+          "href": "https://www.linkedin.com/in/mjdevstudio",
+          "icon": "LI"
+        }
+      ]
+    },
+    "navigation": [
+      { "href": "/about", "label": "About" },
+      { "href": "/projects", "label": "Projects" },
+      { "href": "/metrics", "label": "Metrics" },
+      { "href": "/contact", "label": "Contact" }
+    ]
+  },
+  "about": {
+    "timelineTitle": "The Journey",
+    "timelineHeading": "Asymmetrical Eras",
+    "skillsTitle": "The Stack",
+    "skillsHeading": "Brutalist Typographic Heatmap",
+    "skillsDescription": "Primary skills glow. Secondary fade. Hover to reveal the digital architecture.",
+    "eras": [
+      {
+        "year": "2026",
+        "position": "left",
+        "role": "Junior MERN Stack Developer",
+        "company": "Tech4Edges",
+        "description": "Built scalable web applications using React, Node.js, and MongoDB. Contributed to full-stack development of real-time collaboration features and optimized database queries.",
+        "highlights": [
+          "Developed 5+ production React components",
+          "Implemented real-time WebSocket communication",
+          "Reduced API response time by 40%"
+        ],
+        "tags": ["Next.js", "React Native", "MongoDB", "Node.js"]
+      },
+      {
+        "year": "2025",
+        "position": "right",
+        "role": "Founder & Team Lead",
+        "company": "DevMates",
+        "description": "Founded and led a peer mentorship community for developers. Created structured curriculum, mentored 20+ junior developers, and built collaborative learning platform.",
+        "highlights": [
+          "Built community from 0 to 150+ members",
+          "Mentored 20+ junior developers",
+          "Created comprehensive learning resources"
+        ],
+        "tags": ["Peer Mentorship", "Tailwind CSS", "Community Building"]
+      },
+      {
+        "year": "2023",
+        "position": "left",
+        "role": "Foundational Training",
+        "company": "SMIT (Saylani Mass IT)",
+        "description": "Intensive MERN Stack bootcamp mentored by Sir Tatheer Hussain. Mastered full-stack JavaScript development, best practices, and industry standards.",
+        "highlights": [
+          "Completed 6-month intensive bootcamp",
+          "Mentored by industry expert Sir Tatheer Hussain",
+          "Built 10+ production-ready projects"
+        ],
+        "tags": ["MERN Stack", "JavaScript", "Web Development"]
+      }
+    ],
+    "skills": [
+      { "name": "Next.js 16", "level": "primary" },
+      { "name": "React", "level": "primary" },
+      { "name": "TypeScript", "level": "primary" },
+      { "name": "Node.js", "level": "primary" },
+      { "name": "MongoDB", "level": "primary" },
+      { "name": "Express", "level": "primary" },
+      { "name": "MERN Stack", "level": "primary" },
+      { "name": "AI Integration", "level": "primary" },
+      { "name": "React Native", "level": "secondary" },
+      { "name": "Tailwind CSS", "level": "secondary" },
+      { "name": "E-commerce", "level": "secondary" },
+      { "name": "Web Automation", "level": "secondary" },
+      { "name": "PostgreSQL", "level": "secondary" },
+      { "name": "WebSocket", "level": "secondary" },
+      { "name": "RESTful APIs", "level": "secondary" },
+      { "name": "Git & GitHub", "level": "secondary" },
+      { "name": "DevOps", "level": "secondary" },
+      { "name": "Testing", "level": "secondary" }
+    ]
+  },
+  "stack": {
+    "frontend": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Redux"
+    ],
+    "backend": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "PostgreSQL",
+      "GraphQL",
+      "Redis"
+    ],
+    "tools": ["Docker", "AWS", "Vercel", "Git", "Figma", "Prisma"]
+  },
+  "projects": {
+    "sectionTitle": "Portfolio",
+    "sectionHeading": "Selected Works",
+    "viewAllLabel": "View All Projects",
+    "cards": [
+      {
+        "id": "01",
+        "title": "FINTECH DASHBOARD",
+        "category": "Web Application",
+        "tech": ["Next.js", "TypeScript", "Tailwind"],
+        "year": "2024",
+        "color": "oklch(0.75 0.15 180)"
+      },
+      {
+        "id": "02",
+        "title": "E-COMMERCE PLATFORM",
+        "category": "Full-Stack",
+        "tech": ["React", "Node.js", "MongoDB"],
+        "year": "2024",
+        "color": "oklch(0.7 0.18 300)"
+      },
+      {
+        "id": "03",
+        "title": "AI CONTENT STUDIO",
+        "category": "SaaS Product",
+        "tech": ["Next.js", "OpenAI", "Prisma"],
+        "year": "2024",
+        "color": "oklch(0.8 0.2 60)"
+      },
+      {
+        "id": "04",
+        "title": "REAL-TIME ANALYTICS",
+        "category": "Dashboard",
+        "tech": ["React", "WebSocket", "D3.js"],
+        "year": "2023",
+        "color": "oklch(0.75 0.2 160)"
+      }
+    ]
+  },
+  "caseStudies": {
+    "projects": [
+      {
+        "slug": "neural-sync",
+        "title": "Neural Sync",
+        "client": "TechVentures Inc.",
+        "role": "Full-Stack Engineer",
+        "timeframe": "Jan 2024 – Jun 2024",
+        "stack": ["Next.js", "TypeScript", "PostgreSQL", "tRPC", "Prisma"],
+        "heroImage": "/projects/neural-sync-hero.jpg",
+        "viewLiveUrl": "https://example.com",
+        "sourceCodeUrl": "https://github.com",
+        "sections": [
+          {
+            "number": "01",
+            "title": "The Problem",
+            "content": "TechVentures was struggling with data synchronization across their distributed microservices. Legacy systems relied on polling mechanisms that created excessive database load and introduced 6-8 second delays. The team needed a solution that could handle real-time updates across 15+ services while maintaining sub-500ms latency and reducing database queries by 70%.",
+            "highlights": [
+              "Real-time event propagation",
+              "Sub-500ms latency requirement"
+            ]
+          },
+          {
+            "number": "02",
+            "title": "Architecture & Approach",
+            "content": "I designed a hybrid event-driven architecture using WebSocket connections for real-time clients and a message queue backend for service-to-service communication. The system implements intelligent backpressure handling, automatic reconnection logic, and state reconciliation to ensure consistency across distributed nodes. Each component was built with zero-downtime deployment in mind.",
+            "highlights": [
+              "Event-driven message queue",
+              "WebSocket with fallback polling",
+              "State reconciliation engine",
+              "Automatic reconnection logic"
+            ]
+          },
+          {
+            "number": "03",
+            "title": "The Result",
+            "content": "The Neural Sync system went live across all 15 microservices, immediately reducing database load by 73% and cutting synchronization latency from 6.8 seconds to 340ms. The system handled 100K+ concurrent users during peak load without performance degradation. Within 3 months, the architecture prevented an estimated $280K in infrastructure scaling costs.",
+            "highlights": [
+              "73% database load reduction",
+              "340ms average latency",
+              "100K+ concurrent users"
+            ]
+          }
+        ],
+        "metrics": [
+          { "value": "340ms", "label": "Avg Latency" },
+          { "value": "100K+", "label": "Concurrent Users" },
+          { "value": "73%", "label": "DB Load Reduced" },
+          { "value": "99.98%", "label": "Uptime" }
+        ],
+        "nextProject": {
+          "slug": "quantum-ui",
+          "name": "Quantum UI"
+        }
+      },
+      {
+        "slug": "quantum-ui",
+        "title": "Quantum UI",
+        "client": "DesignFlow Labs",
+        "role": "Lead Frontend Engineer",
+        "timeframe": "Jul 2023 – Dec 2023",
+        "stack": ["React", "Framer Motion", "Tailwind CSS", "Storybook"],
+        "heroImage": "/projects/quantum-ui-hero.jpg",
+        "viewLiveUrl": "https://example.com",
+        "sourceCodeUrl": "https://github.com",
+        "sections": [
+          {
+            "number": "01",
+            "title": "The Challenge",
+            "content": "DesignFlow Labs needed a unified component library that could scale across 40+ internal products while maintaining design consistency. Their scattered approach led to inconsistent user experiences, 200+ hours monthly spent on duplicate work, and accessibility gaps affecting 15% of users.",
+            "highlights": [
+              "Design system consolidation",
+              "Accessibility audit required"
+            ]
+          },
+          {
+            "number": "02",
+            "title": "Solution Design",
+            "content": "I architected a comprehensive design system with 80+ documented components, built in React and Storybook. Each component includes interactive documentation, accessibility audits (WCAG 2.1 AA compliant), and version control. The library features automatic theming, responsive prop systems, and a design token pipeline integrated with Figma.",
+            "highlights": [
+              "80+ documented components",
+              "WCAG 2.1 AA compliant",
+              "Figma integration pipeline",
+              "Theme switching system"
+            ]
+          },
+          {
+            "number": "03",
+            "title": "Impact",
+            "content": "The Quantum UI library was adopted across all 40 products within 6 weeks. Development velocity increased by 45%, with teams spending less time on component implementation. Design consistency improved measurably, and accessibility compliance reached 100%. The system has prevented an estimated 8,000+ hours of duplicate design work.",
+            "highlights": [
+              "45% faster development",
+              "100% accessibility compliance",
+              "8000+ hours saved"
+            ]
+          }
+        ],
+        "metrics": [
+          { "value": "80+", "label": "Components Built" },
+          { "value": "45%", "label": "Dev Speed Increase" },
+          { "value": "100%", "label": "WCAG AA Compliant" },
+          { "value": "40+", "label": "Products Using" }
+        ],
+        "nextProject": {
+          "slug": "velocity-sys",
+          "name": "Velocity Sys"
+        }
+      },
+      {
+        "slug": "velocity-sys",
+        "title": "Velocity Sys",
+        "client": "CloudScale Ltd.",
+        "role": "Infrastructure & Backend Lead",
+        "timeframe": "Mar 2023 – Sep 2023",
+        "stack": ["Node.js", "Kubernetes", "PostgreSQL", "Redis", "Docker"],
+        "heroImage": "/projects/velocity-sys-hero.jpg",
+        "viewLiveUrl": "https://example.com",
+        "sourceCodeUrl": "https://github.com",
+        "sections": [
+          {
+            "number": "01",
+            "title": "The Infrastructure Crisis",
+            "content": "CloudScale was experiencing critical performance bottlenecks in their legacy infrastructure. Auto-scaling policies were ineffective, resulting in unpredictable response times and frequent outages during peak traffic. Database queries were taking 8+ seconds, and the team lacked visibility into system performance.",
+            "highlights": [
+              "Performance bottleneck analysis",
+              "Database query optimization"
+            ]
+          },
+          {
+            "number": "02",
+            "title": "Infrastructure Modernization",
+            "content": "I led a comprehensive infrastructure modernization initiative, migrating from monolithic architecture to containerized Kubernetes clusters. Implemented sophisticated auto-scaling policies, query optimization layers, and comprehensive monitoring with Prometheus and Grafana. The system now features intelligent load balancing and predictive scaling.",
+            "highlights": [
+              "Kubernetes orchestration",
+              "Query optimization layer",
+              "Prometheus monitoring",
+              "Predictive auto-scaling"
+            ]
+          },
+          {
+            "number": "03",
+            "title": "Performance Victory",
+            "content": "Query latency dropped from 8.2 seconds to 180ms. The system now scales elastically to handle 5x traffic spikes without manual intervention. Infrastructure costs decreased by 38% while performance improved 45x. Uptime improved from 98.5% to 99.99%, eliminating all outages.",
+            "highlights": [
+              "45x performance improvement",
+              "99.99% uptime achieved",
+              "38% cost reduction"
+            ]
+          }
+        ],
+        "metrics": [
+          { "value": "180ms", "label": "Query Latency" },
+          { "value": "45x", "label": "Performance Gain" },
+          { "value": "99.99%", "label": "Uptime SLA" },
+          { "value": "38%", "label": "Cost Saved" }
+        ],
+        "nextProject": {
+          "slug": "neural-sync",
+          "name": "Neural Sync"
+        }
+      }
+    ]
+  }
+}
