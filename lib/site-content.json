@@ -257,9 +257,19 @@
     ]
   },
   "stack": {
-    "frontend": [
+    "languages": [
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "JSON",
+      "SQL"
+    ],
+    "frontend & Mobile": [
       "React",
-      "Next.js",
+      "Next.js 16",
+      "React Native",
+      "Expo",
       "TypeScript",
       "Tailwind CSS",
       "Framer Motion",
@@ -270,10 +280,25 @@
       "Express",
       "MongoDB",
       "PostgreSQL",
-      "GraphQL",
-      "Redis"
+      "Redis",
+      "Aggregate Pipelines",
+      "WebSocket"
     ],
-    "tools": ["Docker", "AWS", "Vercel", "Git", "Figma", "Prisma"]
+    "tools": [
+      "Docker",
+      "AWS",
+      "Vercel",
+      "Git",
+      "Github",
+      "Figma",
+      "JWT",
+      "OAuth",
+      "Prisma",
+      "Postman",
+      "Jest",
+      "Vitest",
+      "Playwright"
+    ]
   },
   "projects": {
     "sectionTitle": "Portfolio",

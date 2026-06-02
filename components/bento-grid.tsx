@@ -106,7 +106,7 @@ function StackCard() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: 0.2 }}
-      className="col-span-1 row-span-2 p-6 bg-card rounded-2xl border border-[oklch(1_0_0/0.08)] hover:border-[oklch(1_0_0/0.15)] transition-colors duration-300 overflow-hidden"
+      className="col-span-2 row-span-2 p-6 bg-card rounded-2xl border border-[oklch(1_0_0/0.08)] hover:border-[oklch(1_0_0/0.15)] transition-colors duration-300 overflow-hidden"
     >
       <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
         The Stack
