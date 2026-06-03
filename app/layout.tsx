@@ -56,7 +56,10 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${plusJakartaSans.variable} ${geistMono.variable} bg-background`}
     >
-      <body className="font-sans antialiased min-h-screen" suppressHydrationWarning>
+      <body
+        className="font-sans antialiased min-h-screen"
+        suppressHydrationWarning
+      >
         <div className="noise-overlay" aria-hidden="true" />
         {children}
         {process.env.NODE_ENV === "production" && <Analytics />}
