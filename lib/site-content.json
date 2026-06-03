@@ -20,7 +20,7 @@
       "location": "Peshawar, PK",
       "temperature": "28°C"
     },
-    "aboutIntro": "Full-Stack MERN & Next.js Developer. Currently pursuing BSIT at Agriculture University Peshawar. Passionate about integrating AI into web platforms to create intelligent, human-centric digital experiences. I believe in building not just code, but systems that solve real problems.",
+    "aboutIntro": "I am a Junior MERN & Next.js Developer wrapping up my BSIT at Agriculture University Peshawar. I specialize in AI-integrated web and mobile platforms. Currently, I'm expanding into DevOps, mastering Docker and AWS to engineer and deploy reliable, end-to-end systems.",
     "aboutVibeTitle": "SYSTEM AUDIO // VIBE CHECK",
     "aboutVibeText": "Currently vibing to gaming soundtracks and lo-fi beats. Building with focus, shipping with pride.",
     "aboutHeadline": "ENGINEERING\nDIGITAL\nREALITIES",
@@ -200,21 +200,72 @@
     "skillsDescription": "Primary skills glow. Secondary fade. Hover to reveal the digital architecture.",
     "eras": [
       {
-        "year": "2026",
+        "year": "Jan 2026",
         "position": "left",
-        "role": "Junior MERN Stack Developer",
+        "role": "MERN Stack Developer",
         "company": "Tech4Edges",
-        "description": "Built scalable web applications using React, Node.js, and MongoDB. Contributed to full-stack development of real-time collaboration features and optimized database queries.",
+        "description": "Engineered robust full-stack industrial platforms utilizing React, Next.js 16, Node.js, and MongoDB. Specialized in building high-performance architectures, developing RESTful APIs, and ensuring scalable, optimized user experiences.",
         "highlights": [
-          "Developed 5+ production React components",
-          "Implemented real-time WebSocket communication",
-          "Reduced API response time by 40%"
+          "Delivered the 'Kite' industrial web platform for Mohsin Match Industries, utilizing full-stack Next.js and MongoDB capabilities.",
+          "Architected scalable server-side rendering and data caching workflows leveraging Next.js 16.",
+          "Designed and optimized backend logic, secure RESTful APIs, and database schemas using Node.js and Express."
         ],
-        "tags": ["Next.js", "React Native", "MongoDB", "Node.js"]
+        "tags": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"]
+      },
+      {
+        "year": "Feb 2026",
+        "position": "right",
+        "role": "Co-Founder & Tech Lead",
+        "company": "Nextt Event",
+        "description": "Directing the technical vision and full-stack architecture for a modern event management startup. Balancing high-level system design with hands-on development to build a scalable and user-centric platform.",
+        "highlights": [
+          "Architecting the foundational full-stack infrastructure and defining the core technology stack for scalable deployment.",
+          "Leading the development lifecycle, from translating business requirements into technical roadmaps to writing core application logic.",
+          "Establishing engineering standards and driving the technical execution of the platform using Next.js and modern web technologies."
+        ],
+        "tags": [
+          "Tech Leadership",
+          "System Architecture",
+          "Next.js",
+          "Startup",
+          "Full-Stack Development"
+        ]
+      },
+      {
+        "year": "Dec 2025",
+        "position": "left",
+        "role": "MERN Stack Developer Intern",
+        "company": "Tech4Edges",
+        "description": "Gained hands-on experience in full-stack web development, assisting in the creation of dynamic, responsive applications. Focused on translating UI/UX designs into functional React components and integrating backend services.",
+        "highlights": [
+          "Assisted in developing and maintaining responsive frontend architectures using React and Tailwind CSS.",
+          "Supported the backend team in structuring and testing RESTful APIs with Node.js and Express.",
+          "Collaborated within an agile environment to troubleshoot, debug, and optimize application performance."
+        ],
+        "tags": ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"]
+      },
+      {
+        "year": "Nov 2022",
+        "position": "right",
+        "role": "Bachelor of Science in Information Technology",
+        "company": "Agriculture University Peshawar",
+        "description": "Completed a comprehensive four-year degree program focusing on software engineering, system architecture, and modern development paradigms. Currently awaiting final 8th-semester results.",
+        "highlights": [
+          "Architected and delivered 'AttendX', a complete QR-based attendance management system, as the capstone Final Year Project.",
+          "Built a strong academic foundation in database design, networking, and object-oriented programming.",
+          "Successfully concluded all academic coursework and final examinations as of May 2026."
+        ],
+        "tags": [
+          "Software Engineering",
+          "System Architecture",
+          "AttendX Capstone",
+          "OOP",
+          "Database Design"
+        ]
       },
       {
         "year": "2025",
-        "position": "right",
+        "position": "left",
         "role": "Founder & Team Lead",
         "company": "DevMates",
         "description": "Founded and led a peer mentorship community for developers. Created structured curriculum, mentored 20+ junior developers, and built collaborative learning platform.",
@@ -226,17 +277,17 @@
         "tags": ["Peer Mentorship", "Tailwind CSS", "Community Building"]
       },
       {
-        "year": "2023",
-        "position": "left",
-        "role": "Foundational Training",
-        "company": "SMIT (Saylani Mass IT)",
-        "description": "Intensive MERN Stack bootcamp mentored by Sir Tatheer Hussain. Mastered full-stack JavaScript development, best practices, and industry standards.",
+        "year": "Nov 2024",
+        "position": "right",
+        "role": "MERN Stack Development Trainee",
+        "company": "Saylani Mass IT Training (SMIT)",
+        "description": "Completed an intensive, 1.6-year comprehensive training program focused on modern full-stack web development and software engineering principles.",
         "highlights": [
-          "Completed 6-month intensive bootcamp",
-          "Mentored by industry expert Sir Tatheer Hussain",
-          "Built 10+ production-ready projects"
+          "Mastered the complete MERN stack (MongoDB, Express.js, React, Node.js) from foundational concepts to advanced backend architecture.",
+          "Built, tested, and deployed hands-on practical projects under the direct mentorship and instruction of Sir Tatheer Hussain.",
+          "Developed a strong foundation in modern ES6+ JavaScript, responsive UI design, and robust RESTful API development."
         ],
-        "tags": ["MERN Stack", "JavaScript", "Web Development"]
+        "tags": ["MongoDB", "Express.js", "React", "Node.js", "JavaScript"]
       }
     ],
     "skills": [

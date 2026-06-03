@@ -18,5 +18,5 @@ export default function AboutPage() {
       <AboutSkillsMatrix />
       <AboutCDFooter />
     </main>
-  );
+  );  
 }

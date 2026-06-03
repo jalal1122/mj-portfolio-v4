@@ -28,6 +28,18 @@ function EraCard({ era, index }: EraCardProps) {
   });
 
   const isLeft = era.position === "left";
+  const yearWords = era.year.split(/\s+/);
+  const yearLabel =
+    yearWords.length > 8
+      ? [yearWords.slice(0, 8).join(" "), yearWords.slice(8).join(" ")]
+      : [era.year];
+  const contentAlignment = isLeft
+    ? "mr-auto items-start text-left"
+    : "ml-auto items-end text-right";
+  const highlightAlignment = isLeft
+    ? "flex-row"
+    : "flex-row-reverse justify-end text-right";
+  const tagAlignment = isLeft ? "justify-start" : "justify-end";
 
   return (
     <motion.div
@@ -40,19 +52,21 @@ function EraCard({ era, index }: EraCardProps) {
       {/* Year watermark */}
       <div className="absolute inset-0 flex items-center pointer-events-none">
         <div
-          className={`text-[20vw] font-extrabold text-neutral-900/20 leading-none whitespace-nowrap ${
+          className={`text-[15vw] font-extrabold text-neutral-900/40 leading-none whitespace-nowrap max-sm:whitespace-normal max-sm:break-all ${
             isLeft ? "ml-0" : "ml-auto mr-0"
           }`}
         >
-          {era.year}
+          {yearLabel.map((line, lineIndex) => (
+            <span key={lineIndex} className="block">
+              {line}
+            </span>
+          ))}
         </div>
       </div>
 
       {/* Content */}
       <div
-        className={`relative z-10 max-w-2xl ${
-          isLeft ? "mr-auto text-left" : "ml-auto text-right"
-        }`}
+        className={`relative z-10 flex max-w-2xl flex-col ${contentAlignment}`}
       >
         {/* Header */}
         <motion.div
@@ -77,7 +91,7 @@ function EraCard({ era, index }: EraCardProps) {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-base lg:text-lg text-foreground/80 mb-6 leading-relaxed max-w-xl"
+          className="mb-6 max-w-xl text-base text-justify leading-relaxed text-foreground/80 lg:text-lg"
         >
           {era.description}
         </motion.p>
@@ -90,7 +104,10 @@ function EraCard({ era, index }: EraCardProps) {
           className="mb-8 space-y-2"
         >
           {era.highlights.map((highlight, i) => (
-            <div key={i} className="flex items-start gap-3">
+            <div
+              key={i}
+              className={`flex items-start gap-3 ${highlightAlignment}`}
+            >
               <span className="text-accent mt-1">✦</span>
               <p className="text-sm text-muted-foreground">{highlight}</p>
             </div>
@@ -102,7 +119,7 @@ function EraCard({ era, index }: EraCardProps) {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex flex-wrap gap-2"
+          className={`flex flex-wrap gap-2 ${tagAlignment}`}
         >
           {era.tags.map((tag, i) => (
             <span
