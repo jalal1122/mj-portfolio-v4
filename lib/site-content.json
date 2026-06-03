@@ -11,7 +11,11 @@
     "timezone": "Asia/Karachi",
     "availability": "Available for new ventures",
     "currentRole": "Full-Stack MERN & Next.js Developer",
-    "heroHeadline": ["Engineering", "high-performance", "digital realities."],
+    "heroHeadline": [
+      "Engineering",
+      "high-performance",
+      "digital realities."
+    ],
     "heroSubtext": "Crafting scalable web applications and immersive digital experiences with modern technologies. Turning complex problems into elegant solutions.",
     "heroPrimaryCta": "View Projects",
     "heroSecondaryCta": "Get in Touch",
@@ -68,7 +72,11 @@
         "title": "ATTENDX SYSTEM",
         "year": 2024,
         "role": "FULL-STACK ARCHITECT",
-        "stack": ["REACT", "NODE.JS", "POSTGRESQL"],
+        "stack": [
+          "REACT",
+          "NODE.JS",
+          "POSTGRESQL"
+        ],
         "description": "Attendance management platform with real-time analytics",
         "id": 2,
         "title": "KITE INDUSTRIAL PLATFORM",
@@ -77,7 +85,11 @@
         "headerTitle": "ENGINEERING\nOUTPUT.",
         "headerSubtitle": "Real-time metrics from GitHub, curated for engineering precision.",
         "role": "LEAD ENGINEER",
-        "stack": ["NEXT.JS", "TYPESCRIPT", "TAILWIND"],
+        "stack": [
+          "NEXT.JS",
+          "TYPESCRIPT",
+          "TAILWIND"
+        ],
         "description": "B2B industrial supply chain management system",
         "image": "https://images.unsplash.com/photo-1551434678-e076306042cf?w=800&h=600&fit=crop"
       },
@@ -89,7 +101,11 @@
         "title": "NEURAL INSIGHTS",
         "year": 2023,
         "role": "ML ENGINEER",
-        "stack": ["PYTHON", "TENSORFLOW", "REACT"],
+        "stack": [
+          "PYTHON",
+          "TENSORFLOW",
+          "REACT"
+        ],
         "aboutFooter": {
           "eyebrow": "CONTINUOUS DEPLOYMENT",
           "heading": "The Mantra",
@@ -104,7 +120,11 @@
         "title": "VORTEX API GATEWAY",
         "year": 2023,
         "role": "BACKEND ENGINEER",
-        "stack": ["GO", "KUBERNETES", "GRPC"],
+        "stack": [
+          "GO",
+          "KUBERNETES",
+          "GRPC"
+        ],
         "description": "Scalable API gateway with advanced routing capabilities",
         "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop"
       },
@@ -113,7 +133,11 @@
         "title": "CIPHER SECURITY",
         "year": 2022,
         "role": "SECURITY LEAD",
-        "stack": ["RUST", "CRYPTOGRAPHY", "AUDIT"],
+        "stack": [
+          "RUST",
+          "CRYPTOGRAPHY",
+          "AUDIT"
+        ],
         "description": "Enterprise-grade encryption and security suite",
         "image": "https://images.unsplash.com/photo-1563986768060-7305c1e02d82?w=800&h=600&fit=crop"
       }
@@ -125,7 +149,12 @@
       "sourceCopy": "Metrics sourced from GitHub API and custom analytics pipeline."
     },
     "contact": {
-      "headline": ["LET'S", "BUILD", "SOMETHING", "EXCEPTIONAL."],
+      "headline": [
+        "LET'S",
+        "BUILD",
+        "SOMETHING",
+        "EXCEPTIONAL."
+      ],
       "intro": [
         "Hello Muhammad. My name is",
         "and I am reaching out from",
@@ -166,11 +195,26 @@
       "bottomLeft": "© {year} Muhammad Jalal. All rights reserved.",
       "bottomRight": "Designed & Built with ♥ in Pakistan",
       "navigation": [
-        { "name": "MJ", "href": "/" },
-        { "name": "About", "href": "/about" },
-        { "name": "Projects", "href": "/projects" },
-        { "name": "Metrics", "href": "/metrics" },
-        { "name": "Contact", "href": "/contact" }
+        {
+          "name": "MJ",
+          "href": "/"
+        },
+        {
+          "name": "About",
+          "href": "/about"
+        },
+        {
+          "name": "Projects",
+          "href": "/projects"
+        },
+        {
+          "name": "Metrics",
+          "href": "/metrics"
+        },
+        {
+          "name": "Contact",
+          "href": "/contact"
+        }
       ],
       "socials": [
         {
@@ -186,10 +230,22 @@
       ]
     },
     "navigation": [
-      { "href": "/about", "label": "About" },
-      { "href": "/projects", "label": "Projects" },
-      { "href": "/metrics", "label": "Metrics" },
-      { "href": "/contact", "label": "Contact" }
+      {
+        "href": "/about",
+        "label": "About"
+      },
+      {
+        "href": "/projects",
+        "label": "Projects"
+      },
+      {
+        "href": "/metrics",
+        "label": "Metrics"
+      },
+      {
+        "href": "/contact",
+        "label": "Contact"
+      }
     ]
   },
   "about": {
@@ -210,7 +266,13 @@
           "Architected scalable server-side rendering and data caching workflows leveraging Next.js 16.",
           "Designed and optimized backend logic, secure RESTful APIs, and database schemas using Node.js and Express."
         ],
-        "tags": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"]
+        "tags": [
+          "React",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "Tailwind CSS"
+        ]
       },
       {
         "year": "Feb 2026",
@@ -242,7 +304,13 @@
           "Supported the backend team in structuring and testing RESTful APIs with Node.js and Express.",
           "Collaborated within an agile environment to troubleshoot, debug, and optimize application performance."
         ],
-        "tags": ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"]
+        "tags": [
+          "React",
+          "Tailwind CSS",
+          "Node.js",
+          "Express",
+          "MongoDB"
+        ]
       },
       {
         "year": "Nov 2022",
@@ -274,7 +342,11 @@
           "Mentored 20+ junior developers",
           "Created comprehensive learning resources"
         ],
-        "tags": ["Peer Mentorship", "Tailwind CSS", "Community Building"]
+        "tags": [
+          "Peer Mentorship",
+          "Tailwind CSS",
+          "Community Building"
+        ]
       },
       {
         "year": "Nov 2024",
@@ -287,31 +359,100 @@
           "Built, tested, and deployed hands-on practical projects under the direct mentorship and instruction of Sir Tatheer Hussain.",
           "Developed a strong foundation in modern ES6+ JavaScript, responsive UI design, and robust RESTful API development."
         ],
-        "tags": ["MongoDB", "Express.js", "React", "Node.js", "JavaScript"]
+        "tags": [
+          "MongoDB",
+          "Express.js",
+          "React",
+          "Node.js",
+          "JavaScript"
+        ]
       }
     ],
     "skills": [
-      { "name": "Next.js 16", "level": "primary" },
-      { "name": "React", "level": "primary" },
-      { "name": "TypeScript", "level": "primary" },
-      { "name": "Node.js", "level": "primary" },
-      { "name": "MongoDB", "level": "primary" },
-      { "name": "Express", "level": "primary" },
-      { "name": "React Native", "level": "primary" },
-      { "name": "AI Integration", "level": "primary" },
-      { "name": "Tailwind CSS", "level": "secondary" },
-      { "name": "E-commerce", "level": "secondary" },
-      { "name": "Web Automation", "level": "secondary" },
-      { "name": "PostgreSQL", "level": "secondary" },
-      { "name": "WebSocket", "level": "secondary" },
-      { "name": "RESTful APIs", "level": "secondary" },
-      { "name": "Git & GitHub", "level": "secondary" },
-      { "name": "DevOps", "level": "secondary" },
-      { "name": "Testing", "level": "secondary" },
-      { "name": "Docker", "level": "secondary" },
-      { "name": "AWS", "level": "secondary" },
-      { "name": "Prisma", "level": "secondary" },
-      { "name": "Redis", "level": "secondary" }
+      {
+        "name": "Next.js 16",
+        "level": "primary"
+      },
+      {
+        "name": "React",
+        "level": "primary"
+      },
+      {
+        "name": "TypeScript",
+        "level": "primary"
+      },
+      {
+        "name": "Node.js",
+        "level": "primary"
+      },
+      {
+        "name": "MongoDB",
+        "level": "primary"
+      },
+      {
+        "name": "Express",
+        "level": "primary"
+      },
+      {
+        "name": "React Native",
+        "level": "primary"
+      },
+      {
+        "name": "AI Integration",
+        "level": "primary"
+      },
+      {
+        "name": "Tailwind CSS",
+        "level": "secondary"
+      },
+      {
+        "name": "E-commerce",
+        "level": "secondary"
+      },
+      {
+        "name": "Web Automation",
+        "level": "secondary"
+      },
+      {
+        "name": "PostgreSQL",
+        "level": "secondary"
+      },
+      {
+        "name": "WebSocket",
+        "level": "secondary"
+      },
+      {
+        "name": "RESTful APIs",
+        "level": "secondary"
+      },
+      {
+        "name": "Git & GitHub",
+        "level": "secondary"
+      },
+      {
+        "name": "DevOps",
+        "level": "secondary"
+      },
+      {
+        "name": "Testing",
+        "level": "secondary"
+      },
+      {
+        "name": "Docker",
+        "level": "secondary"
+      },
+      {
+        "name": "AWS",
+        "level": "secondary"
+      },
+      {
+        "name": "Prisma",
+        "level": "secondary"
+      },
+      {
+        "name": "Redis",
+        "level": "secondary"
+      }
     ]
   },
   "stack": {
@@ -367,7 +508,11 @@
         "id": "01",
         "title": "FINTECH DASHBOARD",
         "category": "Web Application",
-        "tech": ["Next.js", "TypeScript", "Tailwind"],
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind"
+        ],
         "year": "2024",
         "color": "oklch(0.75 0.15 180)"
       },
@@ -375,7 +520,11 @@
         "id": "02",
         "title": "E-COMMERCE PLATFORM",
         "category": "Full-Stack",
-        "tech": ["React", "Node.js", "MongoDB"],
+        "tech": [
+          "React",
+          "Node.js",
+          "MongoDB"
+        ],
         "year": "2024",
         "color": "oklch(0.7 0.18 300)"
       },
@@ -383,7 +532,11 @@
         "id": "03",
         "title": "AI CONTENT STUDIO",
         "category": "SaaS Product",
-        "tech": ["Next.js", "OpenAI", "Prisma"],
+        "tech": [
+          "Next.js",
+          "OpenAI",
+          "Prisma"
+        ],
         "year": "2024",
         "color": "oklch(0.8 0.2 60)"
       },
@@ -391,7 +544,11 @@
         "id": "04",
         "title": "REAL-TIME ANALYTICS",
         "category": "Dashboard",
-        "tech": ["React", "WebSocket", "D3.js"],
+        "tech": [
+          "React",
+          "WebSocket",
+          "D3.js"
+        ],
         "year": "2023",
         "color": "oklch(0.75 0.2 160)"
       }
@@ -400,109 +557,147 @@
   "caseStudies": {
     "projects": [
       {
-        "slug": "neural-sync",
-        "title": "Neural Sync",
-        "client": "TechVentures Inc.",
-        "role": "Full-Stack Engineer",
-        "timeframe": "Jan 2024 – Jun 2024",
-        "stack": ["Next.js", "TypeScript", "PostgreSQL", "tRPC", "Prisma"],
-        "heroImage": "/projects/neural-sync-hero.jpg",
-        "viewLiveUrl": "https://example.com",
-        "sourceCodeUrl": "https://github.com",
+        "slug": "attendx-system",
+        "title": "ATTENDX SYSTEM",
+        "client": "Agriculture University (Capstone)",
+        "role": "Lead Full-Stack Developer",
+        "timeframe": "2025 – 2026",
+        "stack": [
+          "React 19",
+          "Node.js",
+          "MongoDB",
+          "Socket.io",
+          "Tailwind CSS"
+        ],
+        "heroImage": "/projects/attendx-hero.jpg",
+        "viewLiveUrl": "https://attendx.example.com",
+        "sourceCodeUrl": "https://github.com/jalal1122/AttendX-FYP-Project",
         "sections": [
           {
             "number": "01",
             "title": "The Problem",
-            "content": "TechVentures was struggling with data synchronization across their distributed microservices. Legacy systems relied on polling mechanisms that created excessive database load and introduced 6-8 second delays. The team needed a solution that could handle real-time updates across 15+ services while maintaining sub-500ms latency and reducing database queries by 70%.",
+            "content": "Traditional institutional attendance procedures are highly vulnerable to manual errors, time wastage, and widespread fraud such as proxy attendance and 'buddy punching.' The objective was to engineer a system that mathematically guarantees a student's physical presence in a designated room without creating bottlenecks at the door or relying on expensive proprietary hardware.",
             "highlights": [
-              "Real-time event propagation",
-              "Sub-500ms latency requirement"
+              "Widespread proxy attendance fraud",
+              "Manual data entry bottlenecks",
+              "Lack of real-time administrative oversight"
             ]
           },
           {
             "number": "02",
             "title": "Architecture & Approach",
-            "content": "I designed a hybrid event-driven architecture using WebSocket connections for real-time clients and a message queue backend for service-to-service communication. The system implements intelligent backpressure handling, automatic reconnection logic, and state reconciliation to ensure consistency across distributed nodes. Each component was built with zero-downtime deployment in mind.",
+            "content": "I designed a decoupled MERN architecture featuring a Triple-Layer Security Protocol. The core innovation is a Rotating QR Engine that generates encrypted JWTs every 20 seconds, synced with a visual timer to prevent screenshot sharing. To enforce physical presence, I integrated a Geofencing engine using the Haversine Formula to validate student GPS coordinates against a strict classroom radius, combined with persistent device fingerprinting to lock accounts to specific hardware.",
             "highlights": [
-              "Event-driven message queue",
-              "WebSocket with fallback polling",
-              "State reconciliation engine",
-              "Automatic reconnection logic"
+              "Encrypted JWT Rotating QR Engine",
+              "Haversine Formula Geofencing",
+              "Device Fingerprinting / UUID Lock",
+              "Socket.io Real-time Telemetry"
             ]
           },
           {
             "number": "03",
             "title": "The Result",
-            "content": "The Neural Sync system went live across all 15 microservices, immediately reducing database load by 73% and cutting synchronization latency from 6.8 seconds to 340ms. The system handled 100K+ concurrent users during peak load without performance degradation. Within 3 months, the architecture prevented an estimated $280K in infrastructure scaling costs.",
+            "content": "AttendX launched as a production-ready, enterprise-grade platform. The triple-layer protocol successfully eliminated proxy vulnerabilities. Teachers gained a live WebSocket-powered monitoring feed, while administrators utilized the automated ExcelJS reporting engine and CRON-style defaulter email alerts to drastically reduce administrative overhead. The system operates with near-zero latency, easily handling concurrent classroom scans.",
             "highlights": [
-              "73% database load reduction",
-              "340ms average latency",
-              "100K+ concurrent users"
+              "100% proxy attendance elimination",
+              "Sub-second WebSocket syncing",
+              "Automated SMTP Defaulter Alerts"
             ]
           }
         ],
         "metrics": [
-          { "value": "340ms", "label": "Avg Latency" },
-          { "value": "100K+", "label": "Concurrent Users" },
-          { "value": "73%", "label": "DB Load Reduced" },
-          { "value": "99.98%", "label": "Uptime" }
+          {
+            "value": "20s",
+            "label": "QR Rotation Rate"
+          },
+          {
+            "value": "3-Layer",
+            "label": "Security Protocol"
+          },
+          {
+            "value": "Real-time",
+            "label": "Telemetry Sync"
+          },
+          {
+            "value": "100%",
+            "label": "Proxy Elimination"
+          }
         ],
         "nextProject": {
-          "slug": "quantum-ui",
-          "name": "Quantum UI"
+          "slug": "kite-industrial-platform",
+          "name": "Kite Industrial"
         }
       },
       {
-        "slug": "quantum-ui",
-        "title": "Quantum UI",
-        "client": "DesignFlow Labs",
-        "role": "Lead Frontend Engineer",
-        "timeframe": "Jul 2023 – Dec 2023",
-        "stack": ["React", "Framer Motion", "Tailwind CSS", "Storybook"],
-        "heroImage": "/projects/quantum-ui-hero.jpg",
-        "viewLiveUrl": "https://example.com",
-        "sourceCodeUrl": "https://github.com",
+        "slug": "dev-events-hub",
+        "title": "DEV EVENTS HUB",
+        "client": "Open Source Initiative",
+        "role": "Full-Stack Architect",
+        "timeframe": "2026",
+        "stack": [
+          "Next.js 16",
+          "TypeScript",
+          "MongoDB",
+          "Server Actions",
+          "Tailwind CSS"
+        ],
+        "heroImage": "/projects/dev-events-hero.jpg",
+        "viewLiveUrl": "https://dev-events.example.com",
+        "sourceCodeUrl": "https://github.com/jalal1122/dev-events",
         "sections": [
           {
             "number": "01",
-            "title": "The Challenge",
-            "content": "DesignFlow Labs needed a unified component library that could scale across 40+ internal products while maintaining design consistency. Their scattered approach led to inconsistent user experiences, 200+ hours monthly spent on duplicate work, and accessibility gaps affecting 15% of users.",
+            "title": "The Problem",
+            "content": "The developer ecosystem is highly fragmented, with hackathons, meetups, and technical conferences scattered across disparate platforms. The objective was to engineer a centralized, high-performance discovery and booking hub capable of handling high-traffic surges while delivering a premium, highly interactive user experience without compromising on load times.",
             "highlights": [
-              "Design system consolidation",
-              "Accessibility audit required"
+              "Fragmented event discovery",
+              "High-traffic performance bottlenecks",
+              "Need for real-time availability tracking"
             ]
           },
           {
             "number": "02",
-            "title": "Solution Design",
-            "content": "I architected a comprehensive design system with 80+ documented components, built in React and Storybook. Each component includes interactive documentation, accessibility audits (WCAG 2.1 AA compliant), and version control. The library features automatic theming, responsive prop systems, and a design token pipeline integrated with Figma.",
+            "title": "Architecture & Approach",
+            "content": "I architected the platform utilizing the bleeding-edge capabilities of Next.js 16. The data layer relies on Server Actions for secure, zero-API-route mutations, interacting directly with a MongoDB Atlas cluster utilizing optimized `.lean()` queries. To guarantee maximum performance, I implemented granular caching strategies using the `use cache` directive, `cacheLife`, and `cacheTag`. The frontend is 100% type-safe with TypeScript, featuring custom, mouse-following light ray physics built in TailwindCSS.",
             "highlights": [
-              "80+ documented components",
-              "WCAG 2.1 AA compliant",
-              "Figma integration pipeline",
-              "Theme switching system"
+              "Next.js 16 Server Actions & App Router",
+              "Granular caching directives",
+              "MongoDB lean queries & automated SEO hooks",
+              "Custom kinetic UI animations"
             ]
           },
           {
             "number": "03",
-            "title": "Impact",
-            "content": "The Quantum UI library was adopted across all 40 products within 6 weeks. Development velocity increased by 45%, with teams spending less time on component implementation. Design consistency improved measurably, and accessibility compliance reached 100%. The system has prevented an estimated 8,000+ hours of duplicate design work.",
+            "title": "The Result",
+            "content": "Dev Events operates as a lightning-fast, SEO-optimized application. By leaning heavily on advanced static generation and intelligent cache control, the system minimizes expensive database hits while maintaining real-time accuracy for event bookings. The resulting platform delivers a flawless, highly scalable developer experience from event creation to final registration.",
             "highlights": [
-              "45% faster development",
-              "100% accessibility compliance",
-              "8000+ hours saved"
+              "Optimized server-side rendering",
+              "Seamless image & media pipeline (Cloudinary)",
+              "Type-safe end-to-end architecture"
             ]
           }
         ],
         "metrics": [
-          { "value": "80+", "label": "Components Built" },
-          { "value": "45%", "label": "Dev Speed Increase" },
-          { "value": "100%", "label": "WCAG AA Compliant" },
-          { "value": "40+", "label": "Products Using" }
+          {
+            "value": "v16",
+            "label": "Next.js Core"
+          },
+          {
+            "value": "100%",
+            "label": "Type-Safe"
+          },
+          {
+            "value": "Active",
+            "label": "Advanced Caching"
+          },
+          {
+            "value": "Zero",
+            "label": "API Routes Needed"
+          }
         ],
         "nextProject": {
-          "slug": "velocity-sys",
-          "name": "Velocity Sys"
+          "slug": "attendx-system",
+          "name": "AttendX System"
         }
       },
       {
@@ -511,7 +706,13 @@
         "client": "CloudScale Ltd.",
         "role": "Infrastructure & Backend Lead",
         "timeframe": "Mar 2023 – Sep 2023",
-        "stack": ["Node.js", "Kubernetes", "PostgreSQL", "Redis", "Docker"],
+        "stack": [
+          "Node.js",
+          "Kubernetes",
+          "PostgreSQL",
+          "Redis",
+          "Docker"
+        ],
         "heroImage": "/projects/velocity-sys-hero.jpg",
         "viewLiveUrl": "https://example.com",
         "sourceCodeUrl": "https://github.com",
@@ -548,10 +749,22 @@
           }
         ],
         "metrics": [
-          { "value": "180ms", "label": "Query Latency" },
-          { "value": "45x", "label": "Performance Gain" },
-          { "value": "99.99%", "label": "Uptime SLA" },
-          { "value": "38%", "label": "Cost Saved" }
+          {
+            "value": "180ms",
+            "label": "Query Latency"
+          },
+          {
+            "value": "45x",
+            "label": "Performance Gain"
+          },
+          {
+            "value": "99.99%",
+            "label": "Uptime SLA"
+          },
+          {
+            "value": "38%",
+            "label": "Cost Saved"
+          }
         ],
         "nextProject": {
           "slug": "neural-sync",
@@ -561,26 +774,83 @@
     ]
   },
   "techItems": [
-    { "name": "Next.js", "type": "filled" },
-    { "name": "React", "type": "outline" },
-    { "name": "TypeScript", "type": "filled" },
-    { "name": "Node.js", "type": "outline" },
-    { "name": "MongoDB", "type": "filled" },
-    { "name": "PostgreSQL", "type": "outline" },
-    { "name": "Tailwind CSS", "type": "filled" },
-    { "name": "React Native", "type": "outline" },
-    { "name": "Docker", "type": "filled" },
-    { "name": "AWS", "type": "outline" },
-    { "name": "Prisma", "type": "filled" },
-    { "name": "Redis", "type": "outline" }
+    {
+      "name": "Next.js",
+      "type": "filled"
+    },
+    {
+      "name": "React",
+      "type": "outline"
+    },
+    {
+      "name": "TypeScript",
+      "type": "filled"
+    },
+    {
+      "name": "Node.js",
+      "type": "outline"
+    },
+    {
+      "name": "MongoDB",
+      "type": "filled"
+    },
+    {
+      "name": "PostgreSQL",
+      "type": "outline"
+    },
+    {
+      "name": "Tailwind CSS",
+      "type": "filled"
+    },
+    {
+      "name": "React Native",
+      "type": "outline"
+    },
+    {
+      "name": "Docker",
+      "type": "filled"
+    },
+    {
+      "name": "AWS",
+      "type": "outline"
+    },
+    {
+      "name": "Prisma",
+      "type": "filled"
+    },
+    {
+      "name": "Redis",
+      "type": "outline"
+    }
   ],
   "clients": [
-    { "name": "Tech4Edges", "logo": "T4E" },
-    { "name": "NexttEvent", "logo": "NXTE" },
-    { "name": "EmergingEdges", "logo": "EE" },
-    { "name": "Anora", "logo": "AR" },
-    { "name": "Anovax", "logo": "AX" },
-    { "name": "Sylani", "logo": "SMIT" },
-    { "name": "DevMates", "logo": "DM" }
+    {
+      "name": "Tech4Edges",
+      "logo": "T4E"
+    },
+    {
+      "name": "NexttEvent",
+      "logo": "NXTE"
+    },
+    {
+      "name": "EmergingEdges",
+      "logo": "EE"
+    },
+    {
+      "name": "Anora",
+      "logo": "AR"
+    },
+    {
+      "name": "Anovax",
+      "logo": "AX"
+    },
+    {
+      "name": "Sylani",
+      "logo": "SMIT"
+    },
+    {
+      "name": "DevMates",
+      "logo": "DM"
+    }
   ]
 }
