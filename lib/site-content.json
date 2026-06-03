@@ -297,9 +297,8 @@
       { "name": "Node.js", "level": "primary" },
       { "name": "MongoDB", "level": "primary" },
       { "name": "Express", "level": "primary" },
-      { "name": "MERN Stack", "level": "primary" },
+      { "name": "React Native", "level": "primary" },
       { "name": "AI Integration", "level": "primary" },
-      { "name": "React Native", "level": "secondary" },
       { "name": "Tailwind CSS", "level": "secondary" },
       { "name": "E-commerce", "level": "secondary" },
       { "name": "Web Automation", "level": "secondary" },
@@ -308,7 +307,11 @@
       { "name": "RESTful APIs", "level": "secondary" },
       { "name": "Git & GitHub", "level": "secondary" },
       { "name": "DevOps", "level": "secondary" },
-      { "name": "Testing", "level": "secondary" }
+      { "name": "Testing", "level": "secondary" },
+      { "name": "Docker", "level": "secondary" },
+      { "name": "AWS", "level": "secondary" },
+      { "name": "Prisma", "level": "secondary" },
+      { "name": "Redis", "level": "secondary" }
     ]
   },
   "stack": {
