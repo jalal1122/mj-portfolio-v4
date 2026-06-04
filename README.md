@@ -41,7 +41,9 @@ The architecture of this project leverages modern, high-performance web standard
 │   ├── about/                # About page route
 │   │   └── page.tsx
 │   ├── api/                  # Route Handlers / API endpoints
-│   │   └── contact/          # Contact form POST endpoint
+│   │   ├── contact/          # Contact form POST endpoint
+│   │   │   └── route.ts
+│   │   └── weather/          # Live Peshawar weather fetching API (cached 30m)
 │   │       └── route.ts
 │   ├── contact/              # Contact page route
 │   │   └── page.tsx
@@ -201,3 +203,19 @@ pnpm run start
 *   **Possible Error Responses:**
     *   `400 Bad Request`: Validation failure on payload parameters (e.g., missing required fields, malformed email).
     *   `500 Internal Server Error`: Misconfigured environment variables on the backend, or SMTP connection/dispatch failure.
+
+---
+
+### Peshawar Weather Forecast API
+*   **Endpoint:** `/api/weather`
+*   **Method:** `GET`
+*   **Description:** Connects to Open-Meteo's public API to query live current weather telemetry for Peshawar, PKT. Responses are cached for 30 minutes to optimize API limits and loading speed.
+*   **Response Structure (200 OK):**
+    ```json
+    {
+      "temperature": "28°C",
+      "condition": "Clear"
+    }
+    ```
+*   **Possible Error Responses:**
+    *   `500 Internal Server Error`: Public API access failure or internal parsing error.
