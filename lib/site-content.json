@@ -774,7 +774,7 @@
           "CKEditor 5",
           "Vite v7"
         ],
-        "heroImage": "/projects/intraverse-hero.jpg",
+        "heroImage": "/projects/intraverse-hero.jpeg",
         "viewLiveUrl": "https://intraverse.example.com",
         "sourceCodeUrl": "https://github.com/jalal1122/IntraVerse-FrontEnd",
         "sections": [
