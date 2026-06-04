@@ -843,6 +843,78 @@
           "slug": "axelium-menuiseries",
           "name": "Axelium Catalog"
         }
+      },
+      {
+        "slug": "intraverse",
+        "title": "INTRAVERSE",
+        "client": "Digital Publishing Platform",
+        "role": "Frontend Architect",
+        "timeframe": "2026",
+        "stack": [
+          "React 19",
+          "Redux Toolkit",
+          "Tailwind v4",
+          "CKEditor 5",
+          "Vite v7"
+        ],
+        "heroImage": "/projects/intraverse-hero.jpg",
+        "viewLiveUrl": "https://intraverse.example.com",
+        "sourceCodeUrl": "https://github.com/jalal1122/IntraVerse-FrontEnd",
+        "sections": [
+          {
+            "number": "01",
+            "title": "The Problem",
+            "content": "Standard blogging interfaces often struggle with state synchronization across complex user sessions, rich text authoring, and dynamic UI themes. The objective was to engineer a premium, highly interactive client-side application that could seamlessly manage global states, secure authentication routes, and handle complex WYSIWYG data payloads without degrading performance.",
+            "highlights": [
+              "Complex client-side state synchronization",
+              "Need for a robust WYSIWYG authoring pipeline",
+              "Fragile cross-session token management"
+            ]
+          },
+          {
+            "number": "02",
+            "title": "Architecture & Approach",
+            "content": "I engineered a blazing-fast SPA using React 19 and Vite v7. The core architecture relies on a highly modular Redux Toolkit state engine, splitting operations into dedicated slices (User, Admin, Posts, Colors). To secure the application, I built a custom Axios interceptor pipeline that automatically captures 401 Unauthorized errors and silently regenerates JWT cookies. The authoring dashboard integrates CKEditor 5 for rich text formatting alongside a dynamic React Head module for per-route SEO injection.",
+            "highlights": [
+              "Modular Redux Toolkit State Engine",
+              "Automated JWT Axios Interceptor Pipeline",
+              "CKEditor 5 Rich Text Integration",
+              "Dynamic React Head SEO Injection"
+            ]
+          },
+          {
+            "number": "03",
+            "title": "The Result",
+            "content": "IntraVerse launched as a production-ready, highly aesthetic publishing client. The robust Redux architecture ensures flawless transitions between Light/Dark themes and immediate UI updates upon user interactions. The strict route guards protect administrative CMS views, while the optimized build pipeline allows for instantaneous deployments across Vercel and Netlify infrastructures.",
+            "highlights": [
+              "Flawless global state synchronization",
+              "Zero-leak protected route guards",
+              "Dynamic system-preference theme mapping"
+            ]
+          }
+        ],
+        "metrics": [
+          {
+            "value": "v19.1",
+            "label": "React Core"
+          },
+          {
+            "value": "Auto",
+            "label": "JWT Refresh"
+          },
+          {
+            "value": "WYSIWYG",
+            "label": "Content Editor"
+          },
+          {
+            "value": "v9.2",
+            "label": "Redux Engine"
+          }
+        ],
+        "nextProject": {
+          "slug": "stallionwear-commerce",
+          "name": "StallionWear"
+        }
       }
     ]
   },
