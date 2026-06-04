@@ -20,7 +20,7 @@ export default function CaseStudyHero({
 }: CaseStudyHeroProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const { scrollY } = useScroll()
-  
+
   const y = useTransform(scrollY, [0, 500], [0, 150])
 
   return (
@@ -59,6 +59,7 @@ export default function CaseStudyHero({
               {title}
             </h1>
           </motion.div>
+
 
           {/* Right: Command Bar */}
           <motion.div

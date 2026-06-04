@@ -3,13 +3,18 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { site } from "@/lib/site-content";
+import { ChevronLeft } from "lucide-react";
 
 const navLinks = site.navigation;
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isCaseStudyPage = pathname?.startsWith("/work/");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +23,29 @@ export function Navigation() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  if (isCaseStudyPage) {
+    return (
+      <motion.nav
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        className="fixed top-6 left-6 z-50"
+      >
+        <Link
+          href="/"
+          className={`flex items-center justify-center w-10 h-10 rounded-full border transition-all duration-300 hover:scale-105 ${
+            isScrolled
+              ? "bg-[oklch(0.08_0_0/0.9)] backdrop-blur-xl border-[oklch(1_0_0/0.1)] text-foreground"
+              : "bg-[oklch(0.1_0_0/0.6)] backdrop-blur-md border-[oklch(1_0_0/0.08)] text-muted-foreground hover:text-foreground"
+          }`}
+          aria-label="Back to home"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </Link>
+      </motion.nav>
+    );
+  }
 
   return (
     <motion.nav
