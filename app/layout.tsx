@@ -3,6 +3,8 @@ import { Plus_Jakarta_Sans, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { site } from "@/lib/site-content";
+import { CommandTerminal } from "@/components/command-terminal";
+import { Navigation } from "@/components/navigation";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -61,6 +63,8 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <div className="noise-overlay" aria-hidden="true" />
+        <Navigation />
+        <CommandTerminal />
         {children}
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>

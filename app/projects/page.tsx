@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { PageBackNav } from "@/components/page-back-nav";
 import { caseStudies } from "@/lib/site-content";
 
 const projects = caseStudies.projects;
@@ -12,6 +13,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden">
+      <PageBackNav currentRoute="/projects" />
       {/* Content */}
       <div className="max-w-7xl mx-auto px-8 py-32 lg:px-16">
         {/* Header */}
@@ -30,7 +32,7 @@ export default function ProjectsPage() {
         </div>
 
         {/* Projects List */}
-        <div className="space-y-24">
+        <div className="space-y-44">
           {projects.map((project, idx) => (
             <Link key={project.slug} href={`/work/${project.slug}`}>
               <motion.div
@@ -39,7 +41,7 @@ export default function ProjectsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.05, duration: 0.6 }}
-                className="group cursor-pointer"
+                className="group cursor-pointer my-12"
               >
                 {/* Project Row */}
                 <div className="flex items-baseline justify-between gap-12">

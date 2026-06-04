@@ -4,6 +4,7 @@ import { MacroReadouts } from "@/components/metrics-macro-readouts";
 import { KineticHeatmap } from "@/components/metrics-kinetic-heatmap";
 import { LanguageDNA } from "@/components/metrics-language-dna";
 import { CapabilityMatrix } from "@/components/metrics-capability-matrix";
+import { PageBackNav } from "@/components/page-back-nav";
 import Link from "next/link";
 import { site } from "@/lib/site-content";
 import { getGitHubMetrics } from "@/lib/github";
@@ -20,20 +21,7 @@ export default async function MetricsPage() {
 
   return (
     <main className="min-h-screen bg-background">
-      {/* Navigation breadcrumb */}
-      <nav className="border-b border-white/10 px-6 md:px-12 py-4 sticky top-0 z-40 bg-black/50 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link
-            href="/"
-            className="font-mono text-xs text-muted-foreground hover:text-white transition-colors"
-          >
-            ← HOME
-          </Link>
-          <div className="font-mono text-xs text-muted-foreground">
-            /metrics
-          </div>
-        </div>
-      </nav>
+      <PageBackNav currentRoute="/metrics" />
 
       {/* Main content */}
       <div className="px-6 md:px-12 py-12 md:py-20">

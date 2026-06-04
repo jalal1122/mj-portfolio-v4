@@ -9,8 +9,11 @@ import { site } from "@/lib/site-content";
 
 function LiveStatus() {
   const [time, setTime] = useState<string>("");
+  const [temp, setTemp] = useState<string>(site.heroStatus.temperature);
+  const [isLoadingWeather, setIsLoadingWeather] = useState(true);
 
   useEffect(() => {
+    // 1. Setup Time updates
     const updateTime = () => {
       const now = new Date();
       const peshawarTime = new Intl.DateTimeFormat("en-US", {
@@ -24,6 +27,24 @@ function LiveStatus() {
 
     updateTime();
     const interval = setInterval(updateTime, 60000);
+
+    // 2. Fetch live weather
+    const fetchWeather = async () => {
+      try {
+        const res = await fetch("/api/weather");
+        if (res.ok) {
+          const data = await res.json();
+          setTemp(data.temperature);
+        }
+      } catch (error) {
+        console.error("Failed to fetch weather:", error);
+      } finally {
+        setIsLoadingWeather(false);
+      }
+    };
+
+    fetchWeather();
+
     return () => clearInterval(interval);
   }, []);
 
@@ -45,13 +66,19 @@ function LiveStatus() {
         </span>
       </div>
 
-      {/* Location & Time */}
+      {/* Location, Time & Temp */}
       <div className="flex items-center gap-4 text-xs uppercase tracking-[0.15em] text-muted-foreground">
         <span>{site.heroStatus.location}</span>
         <span className="text-[oklch(1_0_0/0.3)]">|</span>
         <span className="font-mono">{time || "--:--"} PKT</span>
         <span className="text-[oklch(1_0_0/0.3)]">|</span>
-        <span>{site.heroStatus.temperature}</span>
+        <span className="flex items-center gap-2">
+          {isLoadingWeather ? (
+             <span className="inline-block w-4 h-4 border-2 border-[oklch(1_0_0/0.3)] border-t-accent rounded-full animate-spin" />
+          ) : (
+            temp
+          )}
+        </span>
       </div>
     </motion.div>
   );

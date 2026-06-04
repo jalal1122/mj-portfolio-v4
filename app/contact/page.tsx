@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactLeftPane from "@/components/contact-left-pane";
 import ContactRightPane from "@/components/contact-right-pane";
+import { PageBackNav } from "@/components/page-back-nav";
 import { site } from "@/lib/site-content";
 
 export const metadata: Metadata = {
@@ -10,9 +11,12 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-background flex">
-      <ContactLeftPane />
-      <ContactRightPane />
-    </main>
+    <div className="flex flex-col min-h-screen">
+      <PageBackNav currentRoute="/contact" />
+      <main className="flex-1 bg-background flex">
+        <ContactLeftPane />
+        <ContactRightPane />
+      </main>
+    </div>
   );
 }
