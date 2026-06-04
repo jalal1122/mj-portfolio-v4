@@ -466,7 +466,7 @@
           "Socket.io",
           "Tailwind CSS"
         ],
-        "heroImage": "/projects/attendx-hero.jpg",
+        "heroImage": "/projects/attendx-hero.jpeg",
         "viewLiveUrl": "https://attendx.example.com",
         "sourceCodeUrl": "https://github.com/jalal1122/AttendX-FYP-Project",
         "sections": [
@@ -543,7 +543,7 @@
           "Server Actions",
           "Tailwind CSS"
         ],
-        "heroImage": "/projects/dev-events-hero.jpg",
+        "heroImage": "/projects/devevents-hero.jpeg",
         "viewLiveUrl": "https://dev-events.example.com",
         "sourceCodeUrl": "https://github.com/jalal1122/dev-events",
         "sections": [
@@ -620,7 +620,7 @@
           "Vite v7",
           "EmailJS"
         ],
-        "heroImage": "/projects/axelium-hero.jpg",
+        "heroImage": "/projects/axelium-hero.jpeg",
         "viewLiveUrl": "https://axelium.eu",
         "sourceCodeUrl": "https://github.com/jalal1122/axelium",
         "sections": [
@@ -697,7 +697,7 @@
           "Redux Toolkit",
           "Tailwind v4"
         ],
-        "heroImage": "/projects/stallionwear-hero.jpg",
+        "heroImage": "/projects/stallionwear-hero.jpeg",
         "viewLiveUrl": "https://stallionwear.example.com",
         "sourceCodeUrl": "https://github.com/jalal1122/StallionWear",
         "sections": [
