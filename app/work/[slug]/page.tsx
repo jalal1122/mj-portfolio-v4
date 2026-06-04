@@ -28,7 +28,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${project.title} — Case Study | Ahmad Raza`,
+    title: `${project.title} — Case Study | Muhammad Jalal`,
     description: `Case study of ${project.title} for ${project.client}. ${project.role}. Built with ${project.stack.join(', ')}.`,
   }
 }

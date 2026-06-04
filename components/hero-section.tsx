@@ -2,6 +2,7 @@
 
 import jkimage from "@/public/jkimage.jpeg";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { site } from "@/lib/site-content";
@@ -112,8 +113,8 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.7 }}
               className="flex flex-wrap gap-4"
             >
-              <a
-                href="#projects"
+              <Link
+                href="/projects"
                 className="group inline-flex items-center gap-3 px-6 py-3 bg-foreground text-background font-semibold rounded-full hover:bg-foreground/90 transition-all duration-300"
               >
                 {site.heroPrimaryCta}
@@ -130,13 +131,13 @@ export function HeroSection() {
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                   />
                 </svg>
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                href="/contact"
                 className="inline-flex items-center gap-3 px-6 py-3 text-foreground font-semibold rounded-full border border-[oklch(1_0_0/0.2)] hover:bg-secondary/50 transition-all duration-300"
               >
                 {site.heroSecondaryCta}
-              </a>
+              </Link>
             </motion.div>
           </div>
 

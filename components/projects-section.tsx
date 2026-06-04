@@ -2,9 +2,10 @@
 
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
-import { projects as portfolioProjects, site } from "@/lib/site-content";
+import Link from "next/link";
+import { caseStudies, site } from "@/lib/site-content";
 
-const projects = portfolioProjects.cards;
+const projects = caseStudies.projects;
 
 function ProjectItem({
   project,
@@ -16,72 +17,73 @@ function ProjectItem({
   onLeave: () => void;
 }) {
   return (
-    <motion.a
-      href="#"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      onMouseEnter={onHover}
-      onMouseLeave={onLeave}
-      className="group block py-8 md:py-12 border-b border-[oklch(1_0_0/0.08)] first:border-t hover:border-[oklch(1_0_0/0.15)] transition-colors"
-    >
-      <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
-        {/* Project Number */}
-        <span className="text-sm font-mono text-muted-foreground w-12">
-          {project.id}
-        </span>
+    <Link href={`/work/${project.slug}`}>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        onMouseEnter={onHover}
+        onMouseLeave={onLeave}
+        className="group block py-8 md:py-12 border-b border-[oklch(1_0_0/0.08)] first:border-t hover:border-[oklch(1_0_0/0.15)] transition-colors cursor-pointer"
+      >
+        <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
+          {/* Project Number */}
+          <span className="text-sm font-mono text-muted-foreground w-12">
+            {project.id}
+          </span>
 
-        {/* Project Title */}
-        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight flex-1 group-hover:text-accent transition-colors duration-300">
-          {project.title}
-        </h3>
+          {/* Project Title */}
+          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight flex-1 group-hover:text-accent transition-colors duration-300">
+            {project.title}
+          </h3>
 
-        {/* Project Meta */}
-        <div className="flex items-center gap-6 md:gap-8">
-          <div className="hidden lg:block">
-            <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">
-              Category
-            </p>
-            <p className="text-sm font-medium">{project.category}</p>
-          </div>
-          <div className="hidden md:block">
-            <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">
-              Year
-            </p>
-            <p className="text-sm font-medium">{project.year}</p>
-          </div>
+          {/* Project Meta */}
+          <div className="flex items-center gap-6 md:gap-8">
+            <div className="hidden lg:block">
+              <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">
+                Category
+              </p>
+              <p className="text-sm font-medium">{project.category}</p>
+            </div>
+            <div className="hidden md:block">
+              <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-1">
+                Year
+              </p>
+              <p className="text-sm font-medium">{project.year}</p>
+            </div>
 
-          {/* Arrow */}
-          <div className="w-12 h-12 rounded-full border border-[oklch(1_0_0/0.1)] flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-all duration-300">
-            <svg
-              className="w-5 h-5 text-muted-foreground group-hover:text-background group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M7 17L17 7M17 7H7M17 7V17"
-              />
-            </svg>
+            {/* Arrow */}
+            <div className="w-12 h-12 rounded-full border border-[oklch(1_0_0/0.1)] flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-all duration-300">
+              <svg
+                className="w-5 h-5 text-muted-foreground group-hover:text-background group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M7 17L17 7M17 7H7M17 7V17"
+                />
+              </svg>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Tech Tags - Mobile */}
-      <div className="flex gap-2 mt-4 md:hidden">
-        {project.tech.map((tech) => (
-          <span
-            key={tech}
-            className="px-2 py-1 text-[10px] uppercase tracking-wider bg-secondary/50 text-muted-foreground rounded"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
-    </motion.a>
+        {/* Tech Tags - Mobile */}
+        <div className="flex flex-wrap gap-2 mt-4 md:hidden">
+          {project.stack.map((tech) => (
+            <span
+              key={tech}
+              className="px-2 py-1 text-[10px] uppercase tracking-wider bg-secondary/50 text-muted-foreground rounded"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </motion.div>
+    </Link>
   );
 }
 
@@ -113,7 +115,7 @@ function ImagePreview({
           background: `linear-gradient(135deg, ${activeProject.color} 0%, oklch(0.1 0 0) 100%)`,
         }}
       >
-        {/* Placeholder project preview */}
+        {/* Project preview */}
         <div className="w-full h-full flex items-center justify-center">
           <div className="text-center">
             <div className="w-16 h-16 mx-auto mb-3 rounded-lg bg-[oklch(1_0_0/0.1)] flex items-center justify-center">
@@ -188,9 +190,9 @@ export function ProjectsSection() {
         </motion.div>
 
         <div>
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <ProjectItem
-              key={project.id}
+              key={project.slug}
               project={project}
               onHover={() => setActiveProject(project)}
               onLeave={() => setActiveProject(null)}
@@ -205,8 +207,8 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
-          <a
-            href="#"
+          <Link
+            href="/projects"
             className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors"
           >
             {site.projectsSection.viewAllLabel}
@@ -223,7 +225,7 @@ export function ProjectsSection() {
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-          </a>
+          </Link>
         </motion.div>
       </div>
 

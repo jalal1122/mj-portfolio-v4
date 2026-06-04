@@ -58,7 +58,7 @@
       }
     },
     "currentFocus": {
-      "title": "Building AI-powered SaaS products",
+      "title": "Building NextJs-powered Nextt Event SaaS Platform",
       "status": "In development"
     },
     "projectsSection": {
@@ -66,82 +66,6 @@
       "title": "Selected Works",
       "viewAllLabel": "View All Projects"
     },
-    "projectsArchive": [
-      {
-        "id": 1,
-        "title": "ATTENDX SYSTEM",
-        "year": 2024,
-        "role": "FULL-STACK ARCHITECT",
-        "stack": [
-          "REACT",
-          "NODE.JS",
-          "POSTGRESQL"
-        ],
-        "description": "Attendance management platform with real-time analytics",
-        "id": 2,
-        "title": "KITE INDUSTRIAL PLATFORM",
-        "year": 2024,
-        "headerBadge": "[ LIVE TELEMETRY // GITHUB API CONNECTED ]",
-        "headerTitle": "ENGINEERING\nOUTPUT.",
-        "headerSubtitle": "Real-time metrics from GitHub, curated for engineering precision.",
-        "role": "LEAD ENGINEER",
-        "stack": [
-          "NEXT.JS",
-          "TYPESCRIPT",
-          "TAILWIND"
-        ],
-        "description": "B2B industrial supply chain management system",
-        "image": "https://images.unsplash.com/photo-1551434678-e076306042cf?w=800&h=600&fit=crop"
-      },
-      {
-        "id": 3,
-        "title": "ANORA COMMERCE",
-        "systemReady": "[SYSTEM READY // AWAITING TRANSMISSION]",
-        "contributions": "1,247+",
-        "title": "NEURAL INSIGHTS",
-        "year": 2023,
-        "role": "ML ENGINEER",
-        "stack": [
-          "PYTHON",
-          "TENSORFLOW",
-          "REACT"
-        ],
-        "aboutFooter": {
-          "eyebrow": "CONTINUOUS DEPLOYMENT",
-          "heading": "The Mantra",
-          "marquee": "ALWAYS BUILDING ✦ ALWAYS LEARNING ✦ ALWAYS SHIPPING ✦ ALWAYS BUILDING ✦ ALWAYS LEARNING ✦ ALWAYS SHIPPING ✦",
-          "ctaCopy": "Driven by curiosity. Fueled by passion. Committed to excellence."
-        },
-        "description": "Machine learning analytics dashboard for data science teams",
-        "image": "https://images.unsplash.com/photo-1555949519-cf1d4b9f9c6c?w=800&h=600&fit=crop"
-      },
-      {
-        "id": 5,
-        "title": "VORTEX API GATEWAY",
-        "year": 2023,
-        "role": "BACKEND ENGINEER",
-        "stack": [
-          "GO",
-          "KUBERNETES",
-          "GRPC"
-        ],
-        "description": "Scalable API gateway with advanced routing capabilities",
-        "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop"
-      },
-      {
-        "id": 6,
-        "title": "CIPHER SECURITY",
-        "year": 2022,
-        "role": "SECURITY LEAD",
-        "stack": [
-          "RUST",
-          "CRYPTOGRAPHY",
-          "AUDIT"
-        ],
-        "description": "Enterprise-grade encryption and security suite",
-        "image": "https://images.unsplash.com/photo-1563986768060-7305c1e02d82?w=800&h=600&fit=crop"
-      }
-    ],
     "metrics": {
       "metadataTitle": "Engineering Output — Metrics Dashboard",
       "metadataDescription": "Live telemetry and engineering metrics. Real-time GitHub analytics and capability assessment.",
@@ -499,66 +423,16 @@
       "Playwright"
     ]
   },
-  "projects": {
-    "sectionTitle": "Portfolio",
-    "sectionHeading": "Selected Works",
-    "viewAllLabel": "View All Projects",
-    "cards": [
-      {
-        "id": "01",
-        "title": "FINTECH DASHBOARD",
-        "category": "Web Application",
-        "tech": [
-          "Next.js",
-          "TypeScript",
-          "Tailwind"
-        ],
-        "year": "2024",
-        "color": "oklch(0.75 0.15 180)"
-      },
-      {
-        "id": "02",
-        "title": "E-COMMERCE PLATFORM",
-        "category": "Full-Stack",
-        "tech": [
-          "React",
-          "Node.js",
-          "MongoDB"
-        ],
-        "year": "2024",
-        "color": "oklch(0.7 0.18 300)"
-      },
-      {
-        "id": "03",
-        "title": "AI CONTENT STUDIO",
-        "category": "SaaS Product",
-        "tech": [
-          "Next.js",
-          "OpenAI",
-          "Prisma"
-        ],
-        "year": "2024",
-        "color": "oklch(0.8 0.2 60)"
-      },
-      {
-        "id": "04",
-        "title": "REAL-TIME ANALYTICS",
-        "category": "Dashboard",
-        "tech": [
-          "React",
-          "WebSocket",
-          "D3.js"
-        ],
-        "year": "2023",
-        "color": "oklch(0.75 0.2 160)"
-      }
-    ]
-  },
   "caseStudies": {
     "projects": [
       {
         "slug": "attendx-system",
+        "id": "01",
         "title": "ATTENDX SYSTEM",
+        "category": "Full-Stack Platform",
+        "description": "Enterprise-grade QR-based attendance system with triple-layer security, real-time telemetry, and automated reporting.",
+        "year": "2026",
+        "color": "oklch(0.75 0.18 180)",
         "client": "Agriculture University (Capstone)",
         "role": "Lead Full-Stack Developer",
         "timeframe": "2025 – 2026",
@@ -624,13 +498,18 @@
           }
         ],
         "nextProject": {
-          "slug": "kite-industrial-platform",
-          "name": "Kite Industrial"
+          "slug": "dev-events-hub",
+          "name": "Dev Events Hub"
         }
       },
       {
         "slug": "dev-events-hub",
+        "id": "02",
         "title": "DEV EVENTS HUB",
+        "category": "Web Application",
+        "description": "High-performance developer event discovery and booking hub with Next.js 16 server actions and advanced caching.",
+        "year": "2026",
+        "color": "oklch(0.7 0.18 300)",
         "client": "Open Source Initiative",
         "role": "Full-Stack Architect",
         "timeframe": "2026",
@@ -702,7 +581,12 @@
       },
       {
         "slug": "axelium-menuiseries",
+        "id": "03",
         "title": "AXELIUM MENUISERIES",
+        "category": "Frontend SPA",
+        "description": "Blazing-fast digital catalog for premium architectural joinery with GSAP animations and in-memory data routing.",
+        "year": "2026",
+        "color": "oklch(0.8 0.2 60)",
         "client": "Axelium (Dunkerque, France)",
         "role": "Frontend Architect",
         "timeframe": "2026",
@@ -774,7 +658,12 @@
       },
       {
         "slug": "stallionwear-commerce",
+        "id": "04",
         "title": "STALLIONWEAR COMMERCE",
+        "category": "E-Commerce",
+        "description": "Robust D2C fashion storefront with transactional variant-level inventory, JWT sessions, and real-time revenue dashboards.",
+        "year": "2026",
+        "color": "oklch(0.75 0.15 130)",
         "client": "D2C Fashion Retail",
         "role": "Full-Stack Architect",
         "timeframe": "2026",
@@ -846,7 +735,12 @@
       },
       {
         "slug": "intraverse",
+        "id": "05",
         "title": "INTRAVERSE",
+        "category": "Publishing SPA",
+        "description": "Premium digital publishing client with modular Redux state engine, CKEditor 5 authoring, and dynamic theme system.",
+        "year": "2026",
+        "color": "oklch(0.72 0.16 240)",
         "client": "Digital Publishing Platform",
         "role": "Frontend Architect",
         "timeframe": "2026",
@@ -912,8 +806,8 @@
           }
         ],
         "nextProject": {
-          "slug": "stallionwear-commerce",
-          "name": "StallionWear"
+          "slug": "attendx-system",
+          "name": "AttendX System"
         }
       }
     ]

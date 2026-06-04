@@ -64,8 +64,8 @@ export function FooterSection() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="mt-10"
           >
-            <a
-              href={`mailto:${site.contact.email}`}
+            <Link
+              href="/contact"
               className="group inline-flex items-center gap-4 px-8 py-4 bg-foreground text-background font-semibold text-lg rounded-full hover:bg-foreground/90 transition-all duration-300"
             >
               {site.footer.buttonLabel}
@@ -84,7 +84,7 @@ export function FooterSection() {
                   />
                 </svg>
               </span>
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
 
