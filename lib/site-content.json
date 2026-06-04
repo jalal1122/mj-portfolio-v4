@@ -51,11 +51,34 @@
         "System Architecture",
         "UI/UX Engineering"
       ],
-      "commands": {
-        "help": "Commands: help, skills, contact, clear",
-        "skills": "React, Next.js, Node.js, TypeScript, MongoDB...",
-        "contact": "jk4350649@gmail.com | github.com/ahmadraza"
-      }
+      "availableCommands": [
+        "help", "whoami", "ls", "pwd", "cd", "cat", "echo", "date", "uptime", "clear", "history", "neofetch",
+        "projects", "skills", "stack", "contact", "experience", "goto", "open", "socials", "exit"
+      ],
+      "helpText": [
+        "Available commands:",
+        "  help       - Shows this help message",
+        "  whoami     - Displays current user info",
+        "  ls         - Lists directories/sections (e.g. ls projects, ls skills)",
+        "  pwd        - Print working directory (current route)",
+        "  cd         - Change directory (e.g. cd /projects)",
+        "  cat        - Read file contents (e.g. cat about.txt)",
+        "  clear      - Clears terminal output",
+        "  echo       - Prints text back to the terminal",
+        "  date       - Shows current date/time",
+        "  uptime     - Shows session uptime",
+        "  history    - Shows command history",
+        "  neofetch   - System information",
+        "  projects   - Lists all case studies",
+        "  skills     - Lists all skills",
+        "  stack      - Shows tech stack",
+        "  contact    - Shows contact information",
+        "  experience - Shows career timeline",
+        "  goto       - Navigate to a page (alias for cd)",
+        "  open       - Open a specific project (e.g. open attendx-system)",
+        "  socials    - Lists social links",
+        "  exit       - Closes the terminal modal (if applicable)"
+      ]
     },
     "currentFocus": {
       "title": "Building NextJs-powered Nextt Event SaaS Platform",

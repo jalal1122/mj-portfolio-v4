@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { site, stack } from "@/lib/site-content";
 import type { GitHubMetrics } from "@/lib/github";
+import { useTerminal } from "@/hooks/use-terminal";
 
 const techStack = stack;
 
@@ -133,42 +134,15 @@ function StackCard() {
 }
 
 function TerminalCard() {
-  const [input, setInput] = useState("");
-  const [output, setOutput] = useState<string[]>([
-    "$ whoami",
-    site.terminal.whoami,
-    "$ cat skills.txt",
-    ...site.terminal.skills,
-    "$ _",
-  ]);
-
-  const handleCommand = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter" && input.trim()) {
-      const cmd = input.trim().toLowerCase();
-      let response = "";
-
-      switch (cmd) {
-        case "help":
-          response = site.terminal.commands.help;
-          break;
-        case "skills":
-          response = site.terminal.commands.skills;
-          break;
-        case "contact":
-          response = site.terminal.commands.contact;
-          break;
-        case "clear":
-          setOutput([]);
-          setInput("");
-          return;
-        default:
-          response = `Command not found: ${cmd}`;
-      }
-
-      setOutput([...output.slice(0, -1), `$ ${input}`, response, "$ _"]);
-      setInput("");
-    }
-  };
+  const { input, setInput, output, onKeyDown, bottomRef } = useTerminal({
+    initialOutput: [
+      "$ whoami",
+      site.terminal.whoami,
+      "$ cat skills.txt",
+      ...site.terminal.skills,
+      "$"
+    ]
+  });
 
   return (
     <motion.div
@@ -176,7 +150,7 @@ function TerminalCard() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: 0.3 }}
-      className="col-span-1 p-4 bg-[oklch(0.03_0_0)] rounded-2xl border border-[oklch(1_0_0/0.08)] hover:border-accent/30 transition-colors duration-300 font-mono text-xs"
+      className="col-span-1 p-4 bg-[oklch(0.03_0_0)] rounded-2xl border border-[oklch(1_0_0/0.08)] hover:border-accent/30 transition-colors duration-300 font-mono text-xs flex flex-col h-full min-h-[200px]"
     >
       <div className="flex items-center gap-1.5 mb-3 pb-2 border-b border-[oklch(1_0_0/0.08)]">
         <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
@@ -185,15 +159,15 @@ function TerminalCard() {
         <span className="ml-2 text-muted-foreground text-[10px]">terminal</span>
       </div>
 
-      <div className="space-y-1 h-24 overflow-y-auto text-[10px] md:text-xs">
+      <div className="flex-1 overflow-y-auto space-y-1 text-[10px] md:text-xs">
         {output.map((line, i) => (
           <p
             key={i}
             className={
-              line.startsWith("$") ? "text-accent" : "text-muted-foreground"
+              line.startsWith("$") ? "text-accent" : "text-muted-foreground whitespace-pre-wrap"
             }
           >
-            {line === "$ _" ? (
+            {line === "$" ? (
               <span>
                 $ <span className="animate-blink">▌</span>
               </span>
@@ -202,6 +176,7 @@ function TerminalCard() {
             )}
           </p>
         ))}
+        <div ref={bottomRef} />
       </div>
 
       <div className="mt-2 pt-2 border-t border-[oklch(1_0_0/0.08)]">
@@ -211,7 +186,16 @@ function TerminalCard() {
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            onKeyDown={handleCommand}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && input.trim()) {
+                window.dispatchEvent(
+                  new CustomEvent("open-terminal-with-cmd", { detail: input })
+                );
+                setInput("");
+              } else {
+                onKeyDown(e);
+              }
+            }}
             placeholder="type 'help'"
             className="flex-1 bg-transparent text-foreground outline-none placeholder:text-muted-foreground/50"
           />
