@@ -467,7 +467,7 @@
           "Tailwind CSS"
         ],
         "heroImage": "/projects/attendx-hero.jpeg",
-        "viewLiveUrl": "https://attendx.example.com",
+        "viewLiveUrl": "https://attendx-fyp.vercel.app",
         "sourceCodeUrl": "https://github.com/jalal1122/AttendX-FYP-Project",
         "sections": [
           {
@@ -544,8 +544,8 @@
           "Tailwind CSS"
         ],
         "heroImage": "/projects/devevents-hero.jpeg",
-        "viewLiveUrl": "https://dev-events.example.com",
-        "sourceCodeUrl": "https://github.com/jalal1122/dev-events",
+        "viewLiveUrl": "https://dev-events-seven.vercel.app",
+        "sourceCodeUrl": "https://github.com/jalal1122/dev_events",
         "sections": [
           {
             "number": "01",
@@ -622,7 +622,7 @@
         ],
         "heroImage": "/projects/axelium-hero.jpeg",
         "viewLiveUrl": "https://axelium.eu",
-        "sourceCodeUrl": "https://github.com/jalal1122/axelium",
+        "sourceCodeUrl": "https://github.com/jalal1122/Axelium",
         "sections": [
           {
             "number": "01",
@@ -698,8 +698,8 @@
           "Tailwind v4"
         ],
         "heroImage": "/projects/stallionwear-hero.jpeg",
-        "viewLiveUrl": "https://stallionwear.example.com",
-        "sourceCodeUrl": "https://github.com/jalal1122/StallionWear",
+        "viewLiveUrl": "https://stallionwear.vercel.app",
+        "sourceCodeUrl": "https://github.com/jalal1122/StallionWear-E-commerce-FrontEnd",
         "sections": [
           {
             "number": "01",
@@ -775,7 +775,7 @@
           "Vite v7"
         ],
         "heroImage": "/projects/intraverse-hero.jpeg",
-        "viewLiveUrl": "https://intraverse.example.com",
+        "viewLiveUrl": "https://intraverse.me",
         "sourceCodeUrl": "https://github.com/jalal1122/IntraVerse-FrontEnd",
         "sections": [
           {
