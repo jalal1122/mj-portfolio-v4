@@ -701,74 +701,147 @@
         }
       },
       {
-        "slug": "velocity-sys",
-        "title": "Velocity Sys",
-        "client": "CloudScale Ltd.",
-        "role": "Infrastructure & Backend Lead",
-        "timeframe": "Mar 2023 – Sep 2023",
+        "slug": "axelium-menuiseries",
+        "title": "AXELIUM MENUISERIES",
+        "client": "Axelium (Dunkerque, France)",
+        "role": "Frontend Architect",
+        "timeframe": "2026",
         "stack": [
-          "Node.js",
-          "Kubernetes",
-          "PostgreSQL",
-          "Redis",
-          "Docker"
+          "React 19",
+          "Tailwind CSS v4",
+          "GSAP",
+          "Vite v7",
+          "EmailJS"
         ],
-        "heroImage": "/projects/velocity-sys-hero.jpg",
-        "viewLiveUrl": "https://example.com",
-        "sourceCodeUrl": "https://github.com",
+        "heroImage": "/projects/axelium-hero.jpg",
+        "viewLiveUrl": "https://axelium.eu",
+        "sourceCodeUrl": "https://github.com/jalal1122/axelium",
         "sections": [
           {
             "number": "01",
-            "title": "The Infrastructure Crisis",
-            "content": "CloudScale was experiencing critical performance bottlenecks in their legacy infrastructure. Auto-scaling policies were ineffective, resulting in unpredictable response times and frequent outages during peak traffic. Database queries were taking 8+ seconds, and the team lacked visibility into system performance.",
+            "title": "The Problem",
+            "content": "Axelium Menuiseries required a high-performance digital catalog to showcase premium, custom-built architectural joinery. The primary engineering challenge was presenting highly dense technical specifications—such as thermal transmittance, sound insulation metrics, and structural cross-sections—in an elegant, fluid interface without introducing cognitive overload or sluggish database queries.",
             "highlights": [
-              "Performance bottleneck analysis",
-              "Database query optimization"
+              "Dense technical specification mapping",
+              "Requirement for high-end visual fluidity",
+              "Need for precise SEO indexing on a client-side SPA"
             ]
           },
           {
             "number": "02",
-            "title": "Infrastructure Modernization",
-            "content": "I led a comprehensive infrastructure modernization initiative, migrating from monolithic architecture to containerized Kubernetes clusters. Implemented sophisticated auto-scaling policies, query optimization layers, and comprehensive monitoring with Prometheus and Grafana. The system now features intelligent load balancing and predictive scaling.",
+            "title": "Architecture & Approach",
+            "content": "I engineered a blazing-fast Single Page Application utilizing the React 19 and Vite v7 compiler pipeline. To achieve sub-millisecond route transitions, the entire complex product catalog is structured as an in-memory database (`products.js`). The UI features hardware-accelerated GSAP animations for immersive layout expansions, styled via the new `@tailwindcss/vite` engine. For marketing reach, I wrote a custom ESM node script that automatically intercepts the Vercel build process to generate dynamic, SEO-compliant sitemaps.",
             "highlights": [
-              "Kubernetes orchestration",
-              "Query optimization layer",
-              "Prometheus monitoring",
-              "Predictive auto-scaling"
+              "In-memory static catalog routing",
+              "Hardware-accelerated GSAP layout transitions",
+              "Automated Pre-build XML Sitemap Engine",
+              "Serverless SMTP pipeline via EmailJS"
             ]
           },
           {
             "number": "03",
-            "title": "Performance Victory",
-            "content": "Query latency dropped from 8.2 seconds to 180ms. The system now scales elastically to handle 5x traffic spikes without manual intervention. Infrastructure costs decreased by 38% while performance improved 45x. Uptime improved from 98.5% to 99.99%, eliminating all outages.",
+            "title": "The Result",
+            "content": "The application operates as a lightning-fast, highly optimized digital showroom. By decoupling the catalog from a traditional backend database and utilizing an in-memory structure, data retrieval latency was effectively reduced to zero. The platform provides a seamless, immersive browsing experience that instantly transitions users from exploring complex architectural diagrams to submitting secure quote inquiries.",
             "highlights": [
-              "45x performance improvement",
-              "99.99% uptime achieved",
-              "38% cost reduction"
+              "Sub-millisecond data retrieval",
+              "Zero-backend infrastructure overhead",
+              "Highly reactive GSAP user interfaces"
             ]
           }
         ],
         "metrics": [
           {
-            "value": "180ms",
-            "label": "Query Latency"
+            "value": "Sub-ms",
+            "label": "Data Latency"
           },
           {
-            "value": "45x",
-            "label": "Performance Gain"
+            "value": "GSAP",
+            "label": "Animation Engine"
           },
           {
-            "value": "99.99%",
-            "label": "Uptime SLA"
+            "value": "v4",
+            "label": "Tailwind Engine"
           },
           {
-            "value": "38%",
-            "label": "Cost Saved"
+            "value": "Serverless",
+            "label": "Form Pipeline"
           }
         ],
         "nextProject": {
-          "slug": "neural-sync",
-          "name": "Neural Sync"
+          "slug": "dev-events-hub",
+          "name": "Dev Events Hub"
+        }
+      },
+      {
+        "slug": "stallionwear-commerce",
+        "title": "STALLIONWEAR COMMERCE",
+        "client": "D2C Fashion Retail",
+        "role": "Full-Stack Architect",
+        "timeframe": "2026",
+        "stack": [
+          "React 19",
+          "Express 5",
+          "MongoDB",
+          "Redux Toolkit",
+          "Tailwind v4"
+        ],
+        "heroImage": "/projects/stallionwear-hero.jpg",
+        "viewLiveUrl": "https://stallionwear.example.com",
+        "sourceCodeUrl": "https://github.com/jalal1122/StallionWear",
+        "sections": [
+          {
+            "number": "01",
+            "title": "The Problem",
+            "content": "High-volume e-commerce platforms frequently suffer from double-selling vulnerabilities during traffic spikes and fragile user session management. The objective was to engineer a robust, fault-tolerant retail engine capable of managing complex, multi-attribute variant inventory (sizes/colors) while maintaining strict security over customer transactions and persistent cart states.",
+            "highlights": [
+              "High-risk double-selling vulnerabilities",
+              "Complex multi-attribute stock tracking",
+              "Fragile cross-device cart persistence"
+            ]
+          },
+          {
+            "number": "02",
+            "title": "Architecture & Approach",
+            "content": "I architected a highly secure MERN platform utilizing the bleeding-edge Express 5 framework and React 19. The client state engine relies on Redux Toolkit paired with strict Axios interceptors for JWT-secured, persistent sessions. The backend features a transactional variant-level locking system in MongoDB, deducting and restoring stock dynamically across a 6-stage order tracking pipeline. Media assets are routed through an optimized Multer-to-Cloudinary pipeline with automated volatile memory cleanup.",
+            "highlights": [
+              "Transactional variant-level stock validation",
+              "JWT-secured Axios interceptor pipeline",
+              "MongoDB sub-document cart persistence",
+              "Advanced admin aggregation algorithms"
+            ]
+          },
+          {
+            "number": "03",
+            "title": "The Result",
+            "content": "StallionWear launched as a production-ready, highly secure storefront. The custom variant validation algorithm completely eliminated double-selling errors. Store administrators were equipped with a real-time data aggregation dashboard to monitor revenue telemetry and sales trends, while customers gained a seamless shopping experience with carts and wishlists that perfectly synchronize across all devices.",
+            "highlights": [
+              "Zero double-selling inventory errors",
+              "Real-time revenue telemetry dashboard",
+              "Flawless cross-device session retention"
+            ]
+          }
+        ],
+        "metrics": [
+          {
+            "value": "v5.0",
+            "label": "Express Core"
+          },
+          {
+            "value": "100%",
+            "label": "Stock Accuracy"
+          },
+          {
+            "value": "6-Stage",
+            "label": "Order Pipeline"
+          },
+          {
+            "value": "Zero",
+            "label": "Cart Desync"
+          }
+        ],
+        "nextProject": {
+          "slug": "axelium-menuiseries",
+          "name": "Axelium Catalog"
         }
       }
     ]
