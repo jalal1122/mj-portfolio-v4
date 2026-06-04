@@ -5,6 +5,7 @@ import { BentoGrid } from "@/components/bento-grid";
 import { ProjectsSection } from "@/components/projects-section";
 import { TrustSection } from "@/components/trust-section";
 import { FooterSection } from "@/components/footer-section";
+import { WelcomeSplash } from "@/components/welcome-splash";
 import { getGitHubMetrics } from "@/lib/github";
 
 export const dynamic = "force-dynamic";
@@ -14,7 +15,7 @@ export default async function Home() {
 
   return (
     <main className="relative">
-      <Navigation />
+      <WelcomeSplash />
       <HeroSection />
       <TechTicker />
       <BentoGrid githubMetrics={githubMetrics} />
