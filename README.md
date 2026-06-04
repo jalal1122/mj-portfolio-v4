@@ -21,12 +21,15 @@ The architecture of this project leverages modern, high-performance web standard
 ## 2. Core Features
 
 *   **Interactive Bento Grid Landing Page:** Orchestrates telemetry counters, location/availability tags, dynamic highlights, and direct CTAs.
+*   **Interactive Command Terminal (CLI) Interface:** A developer-centric CLI overlay (triggered with `Ctrl + K`, `⌘K`, or navbar selection) that processes commands like `help`, `whoami`, `ls`, `cd`, `cat`, and `neofetch` to navigate pages, view skills, and fetch project metadata in real-time.
+*   **Session-Aware Welcome Splash Screen:** A cinematic modal introduction displaying startup metadata and hotkey hints. Uses `sessionStorage` to guarantee it only triggers once per browser session.
 *   **Live GitHub Telemetry Integration:** Queries the GitHub GraphQL API in real-time to compute total repositories, total stars, annual contribution metrics, and recent commit frequencies.
 *   **Dynamic Telemetry Dashboard (`/metrics`):** Displays a detailed developer breakdown featuring macro readouts, a contribution activity heatmap, a "Language DNA" distribution chart, and a core technical capability matrix.
 *   **Interactive Projects Archive (`/projects`):** List of all selected archives with custom image-reveal mechanics that show dynamic project screenshots tracking the user's cursor.
 *   **Rich Dynamic Case Studies (`/work/[slug]`):** Dynamic project pages loading from a central JSON database. Displays client metadata, development roles, project timelines, structured problem-solution narratives, performance metrics, and navigation links.
 *   **Asymmetric Eras Timeline (`/about`):** A custom timeline rendering professional and academic achievements with interactive highlights and tech tags.
 *   **Typographic Skills Heatmap Matrix:** Visualizes technical skill importance using a typographic hierarchy where primary skills glow/pop and secondary skills fade until hovered.
+*   **Fluid Framer Motion Transitions:** Native page transitions integrated through Next.js templates (`app/template.tsx`) offering sleek layout slide-ins.
 *   **Fully Validated Contact Engine (`/contact`):** Form interface built with React Hook Form and Zod validation schemas, hooked into a server-side Nodemailer email utility that dispatches secure SMTP payloads.
 
 ---
@@ -50,8 +53,9 @@ The architecture of this project leverages modern, high-performance web standard
 │   │   └── [slug]/           # Dynamic project parameter page
 │   │       └── page.tsx
 │   ├── globals.css           # Global custom CSS rules
-│   ├── layout.tsx            # Global layout (Fonts, Meta, Analytics)
-│   └── page.tsx              # Home / Landing page entrypoint
+│   ├── layout.tsx            # Global layout (Fonts, Meta, Analytics, Navigation, Terminal)
+│   ├── page.tsx              # Home / Landing page entrypoint
+│   └── template.tsx          # Page-load transition wrapper component
 ├── components/               # React components directory
 │   ├── ui/                   # Reusable shadcn/ui components (radix-based primitives)
 │   ├── about-cd-footer.tsx   # Continuous Deployment marquee component
@@ -60,6 +64,7 @@ The architecture of this project leverages modern, high-performance web standard
 │   ├── about-skills-matrix.tsx # Skill typographic heatmap component
 │   ├── bento-grid.tsx        # Home layout bento widgets (live stats, location, etc.)
 │   ├── case-study-...        # Components for rendering datasheet, narrative, metrics
+│   ├── command-terminal.tsx  # Global command terminal component
 │   ├── contact-left-pane.tsx  # Left contact page panel details
 │   ├── contact-right-pane.tsx # Right contact page interactive form
 │   ├── footer-section.tsx    # Home page CTA & footer brand details
@@ -67,11 +72,17 @@ The architecture of this project leverages modern, high-performance web standard
 │   ├── image-reveal.tsx      # Projects list cursor image tracker helper
 │   ├── metrics-...           # Heatmap, Language DNA chart, Capability matrix widgets
 │   ├── navigation.tsx        # Floating navbar component
+│   ├── page-back-nav.tsx     # Inner page return navigation bar
+│   ├── page-transition.tsx   # Exit/Enter framer-motion animations
 │   ├── projects-section.tsx  # Highlight projects gallery
 │   ├── tech-ticker.tsx       # Scrolling technical ticker marquee
 │   ├── theme-provider.tsx    # Next Theme context wrapper
-│   └── trust-section.tsx     # Past clients logo showcase
-├── hooks/                    # Custom application hooks (use-toast, use-mobile)
+│   ├── trust-section.tsx     # Past clients logo showcase
+│   └── welcome-splash.tsx    # Session-aware cinematic splash modal
+├── hooks/                    # Custom application hooks
+│   ├── use-mobile.ts         # Hook to check window size for mobile view
+│   ├── use-terminal.ts       # CLI state machine and terminal action interpreter
+│   └── use-toast.ts          # Shadcn notification management hook
 ├── lib/                      # Core utility functions & static datasets
 │   ├── github.ts             # GitHub GraphQL client & fallback generator
 │   ├── projects-data.ts      # Slugs and case study project resolvers
