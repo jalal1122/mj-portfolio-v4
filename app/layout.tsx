@@ -49,6 +49,12 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${plusJakartaSans.variable} ${geistMono.variable} bg-background`}
     >
+      <head>
+        <meta
+          name="google-site-verification"
+          content="ERC8ACNHHFZMVrNbwZEioSnx_F-gPE_EzTAfHAXVvUQ"
+        />
+      </head>
       <body
         className="font-sans antialiased min-h-screen"
         suppressHydrationWarning
