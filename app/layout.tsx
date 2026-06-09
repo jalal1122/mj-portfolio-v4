@@ -5,6 +5,7 @@ import "./globals.css";
 import { site } from "@/lib/site-content";
 import { CommandTerminal } from "@/components/command-terminal";
 import { Navigation } from "@/components/navigation";
+import Script from 'next/script'
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -63,7 +64,27 @@ export default function RootLayout({
         <Navigation />
         <CommandTerminal />
         {children}
+
+        {/* Vercel Analytics */}
         {process.env.NODE_ENV === "production" && <Analytics />}
+
+        {/* Google Analytics Scripts */}
+        {process.env.NODE_ENV === "production" && (
+          <>
+            <Script
+              src="https://www.googletagmanager.com/gtag/js?id=G-0ZDYVHMFYG"
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-0ZDYVHMFYG');
+              `}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );
