@@ -47,7 +47,7 @@ export default function CaseStudyHero({
         <div className="flex-1" />
 
         {/* Bottom section with title and action bar */}
-        <div className="flex items-end justify-between gap-8">
+        <div className="flex flex-col items-start md:flex-row md:items-end justify-between gap-6 md:gap-8">
           {/* Left: Massive Title */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -55,7 +55,7 @@ export default function CaseStudyHero({
             transition={{ delay: 0.2, duration: 0.8 }}
             className="flex-1 pb-8"
           >
-            <h1 className="text-7xl md:text-8xl xl:text-[10rem] font-bold uppercase tracking-tighter leading-none text-foreground">
+            <h1 className="text-5xl md:text-7xl xl:text-[10rem] font-bold uppercase tracking-tighter leading-none text-foreground">
               {title}
             </h1>
           </motion.div>
