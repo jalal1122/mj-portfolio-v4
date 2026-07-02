@@ -59,10 +59,10 @@ export function CommandTerminal() {
 
   useEffect(() => {
     if (isOpen && inputRef.current) {
-      // Focus after a short delay to allow animation to start
+      // Focus after a short delay to allow animation to start or when output changes
       setTimeout(() => inputRef.current?.focus(), 100);
     }
-  }, [isOpen]);
+  }, [isOpen, output]);
 
   const handleModalClick = () => {
     if (inputRef.current) {
