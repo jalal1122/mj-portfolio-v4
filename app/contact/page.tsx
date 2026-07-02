@@ -13,7 +13,7 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <PageBackNav currentRoute="/contact" />
-      <main className="flex-1 bg-background flex">
+      <main className="flex-1 bg-background flex flex-col md:flex-row">
         <ContactLeftPane />
         <ContactRightPane />
       </main>

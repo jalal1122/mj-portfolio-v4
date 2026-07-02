@@ -76,7 +76,7 @@ export default function ContactRightPane() {
   };
 
   return (
-    <div className="w-3/5 p-24 flex flex-col justify-center bg-background overflow-y-auto">
+    <div className="w-full md:w-3/5 p-8 md:p-24 flex flex-col justify-center bg-background overflow-y-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

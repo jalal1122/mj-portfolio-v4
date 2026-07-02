@@ -27,14 +27,14 @@ export default function ContactLeftPane() {
 
   if (!mounted) {
     return (
-      <div className="w-2/5 border-r border-white/10 p-16 flex flex-col justify-between bg-background/80 backdrop-blur-sm">
+      <div className="w-full md:w-2/5 border-b md:border-b-0 md:border-r border-white/10 p-8 md:p-16 flex flex-col justify-between bg-background/80 backdrop-blur-sm">
         <div />
       </div>
     );
   }
 
   return (
-    <div className="w-2/5 border-r border-white/10 p-16 flex flex-col justify-between bg-background/80 backdrop-blur-sm">
+    <div className="w-full md:w-2/5 border-b md:border-b-0 md:border-r border-white/10 p-8 md:p-16 flex flex-col justify-between bg-background/80 backdrop-blur-sm">
       {/* Headline */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -42,16 +42,16 @@ export default function ContactLeftPane() {
         transition={{ duration: 0.8 }}
         className="space-y-2"
       >
-        <div className="text-7xl font-black leading-none tracking-tighter">
+        <div className="text-5xl md:text-7xl font-black leading-none tracking-tighter">
           {site.contact.headline[0]}
         </div>
-        <div className="text-7xl font-black leading-none tracking-tighter text-white/80">
+        <div className="text-5xl md:text-7xl font-black leading-none tracking-tighter text-white/80">
           {site.contact.headline[1]}
         </div>
-        <div className="text-7xl font-black leading-none tracking-tighter text-white/60">
+        <div className="text-5xl md:text-7xl font-black leading-none tracking-tighter text-white/60">
           {site.contact.headline[2]}
         </div>
-        <div className="text-7xl font-black leading-none tracking-tighter text-white/40">
+        <div className="text-5xl md:text-7xl font-black leading-none tracking-tighter text-white/40">
           {site.contact.headline[3]}
         </div>
       </motion.div>
