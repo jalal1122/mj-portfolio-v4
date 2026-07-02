@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="w-full bg-background relative">
+    <main className="w-full bg-background relative overflow-x-hidden">
       <PageBackNav currentRoute="/about" />
       <AboutIdentityHero />
       <AboutEras />

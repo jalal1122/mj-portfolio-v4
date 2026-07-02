@@ -46,7 +46,7 @@ export default async function CaseStudyPage({
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       {/* Hero Section */}
       <CaseStudyHero
         title={project.title}
