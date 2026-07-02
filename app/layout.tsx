@@ -57,7 +57,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="font-sans antialiased min-h-screen"
+        className="font-sans antialiased min-h-screen overflow-x-hidden"
         suppressHydrationWarning
       >
         <div className="noise-overlay" aria-hidden="true" />
