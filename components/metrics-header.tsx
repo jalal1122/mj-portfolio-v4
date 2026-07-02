@@ -11,7 +11,7 @@ export function MetricsHeader() {
           {site.headerBadge}
         </span>
       </div>
-      <h1 className="font-sans font-black text-7xl md:text-8xl lg:text-[10rem] leading-[0.9] text-white mb-2">
+      <h1 className="font-sans font-black text-5xl md:text-8xl lg:text-[10rem] leading-[0.9] text-white mb-2">
         {site.headerTitle.split("\n").map((line: string) => (
           <span key={line}>
             {line}
