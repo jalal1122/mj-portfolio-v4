@@ -44,7 +44,7 @@ export default function ProjectsPage() {
                 className="group cursor-pointer my-12"
               >
                 {/* Project Row */}
-                <div className="flex items-baseline justify-between gap-12">
+                <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-6 md:gap-12">
                   {/* Left: Title */}
                   <motion.h2
                     animate={{
@@ -57,13 +57,13 @@ export default function ProjectsPage() {
                       x: hoveredSlug === project.slug ? 12 : 0,
                     }}
                     transition={{ duration: 0.3 }}
-                    className="text-7xl lg:text-8xl font-bold tracking-tight leading-none flex-1 font-sans"
+                    className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none flex-1 font-sans"
                   >
                     {project.title}
                   </motion.h2>
 
                   {/* Right: Metadata */}
-                  <div className="flex-shrink-0 font-mono text-xs text-muted-foreground space-y-2 text-right min-w-max">
+                  <div className="flex-shrink-0 font-mono text-xs text-muted-foreground space-y-2 text-left md:text-right min-w-max mt-4 md:mt-0">
                     <div className="text-neutral-600">
                       YEAR: {project.timeframe}
                     </div>
