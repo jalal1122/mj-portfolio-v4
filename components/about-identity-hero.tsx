@@ -36,7 +36,7 @@ export function AboutIdentityHero() {
         transition={{ duration: 0.8 }}
         className="w-full max-w-7xl mb-20"
       >
-        <h1 className="text-7xl lg:text-[12rem] font-extrabold leading-[0.9] text-foreground text-balance">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[12rem] font-extrabold leading-[0.9] text-foreground text-balance break-words">
           {site.aboutHeadline.split("\n").map((line) => (
             <span key={line}>
               {line}

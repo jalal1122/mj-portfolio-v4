@@ -24,7 +24,7 @@ export default function ProjectsPage() {
           </div>
 
           {/* Title */}
-          <h1 className="text-8xl lg:text-9xl font-bold tracking-tight leading-none font-sans">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-none font-sans break-words">
             SELECTED
             <br />
             ARCHIVES
@@ -57,7 +57,7 @@ export default function ProjectsPage() {
                       x: hoveredSlug === project.slug ? 12 : 0,
                     }}
                     transition={{ duration: 0.3 }}
-                    className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none flex-1 font-sans"
+                    className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none flex-1 font-sans break-words"
                   >
                     {project.title}
                   </motion.h2>
